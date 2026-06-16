@@ -190,10 +190,12 @@ function renderGroups(){
 function startQuiz(qs, title, mode='group'){
   state.quiz = qs;
   state.index = 0;
-  state.answers = {};
   state.title = title;
   state.mode = mode;
   state.lastQuiz = qs;
+  const saved = loadSaved();
+  state.answers = {};
+  qs.forEach(q => { if(saved[q.id]) state.answers[q.id] = saved[q.id]; });
   $('groupsSection').classList.add('hidden');
   $('resultSection').classList.add('hidden');
   $('reviewList').classList.add('hidden');
