@@ -191,7 +191,7 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 
 .subtitle {
   color: var(--muted);
-  font-size: .62rem;
+  font-size: 1rem;
   line-height: 1.9;
   max-width: 680px;
   margin: 0 0 28px;
