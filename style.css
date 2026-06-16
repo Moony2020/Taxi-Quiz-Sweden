@@ -149,6 +149,8 @@ button {
   border: 1px solid var(--border);
 }
 
+#themeBtn { width: 42px; height: 42px; padding: 0; display: grid; place-items: center; }
+
 button:hover:not(:disabled) { transform: translateY(-2px); }
 button:active:not(:disabled) { transform: translateY(0); }
 button:disabled { opacity: .38; cursor: not-allowed; }
@@ -189,7 +191,7 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 
 .subtitle {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: .62rem;
   line-height: 1.9;
   max-width: 680px;
   margin: 0 0 28px;
@@ -665,8 +667,8 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 .option.selected { border-color: var(--gold); background: var(--gold-dim); }
 .option.correct { border-color: var(--good); background: rgba(53,212,143,.1); }
 .option.correct .key { background: rgba(53,212,143,.2); color: var(--good); }
-.option.wrong { border-color: var(--bad); background: rgba(245,100,118,.15); }
-.option.wrong .key { background: rgba(245,100,118,.25); color: var(--bad); }
+.option.wrong { border-color: var(--bad); background: rgba(245,100,118,.1); }
+.option.wrong .key { background: rgba(245,100,118,.2); color: var(--bad); }
 
 /* ─── Hint Box ─── */
 .hint-box {
@@ -813,7 +815,7 @@ body.light .score-circle::before {
 }
 
 .tag.good { background: rgba(53,212,143,.15); color: var(--good); }
-.tag.bad { background: rgba(245,100,118,.25); color: var(--bad); }
+.tag.bad { background: rgba(245,100,118,.15); color: var(--bad); }
 
 /* ─── Footer ─── */
 footer {

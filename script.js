@@ -2,13 +2,17 @@ function splitHelperLines(text){ return (text || '').replace(/\s+/g,' ').trim().
 function parseMergedOptionText(text){
   const raw = (text || '').trim();
   const helperMatch = raw.match(/\s+Särtryck\/hjälpmedel\b/i);
-  const helperIndex = helperMatch ? helperMatch.index : -1;
-  const beforeHelper = helperIndex >= 0 ? raw.slice(0, helperIndex).trim() : raw;
-  const helperText = helperIndex >= 0 ? raw.slice(helperIndex).replace(/\s*Särtryck\/hjälpmedel\s*/i,'').trim() : '';
-  const contextMatch = beforeHelper.match(/\s+(Du\b.*|En kund\b.*)$/);
+  let helperText = helperMatch ? raw.slice(helperMatch.index).replace(/\s*Särtryck\/hjälpmedel\s*/i,'').trim() : '';
+  let mainText = helperMatch ? raw.slice(0, helperMatch.index).trim() : raw;
+  let contextText = '', answerText = mainText;
+  const contextMatch = mainText.match(/\s+(Du\b|En kund\b|Din\b|Resan\b).*$/i);
+  if(contextMatch){
+    answerText = mainText.slice(0, contextMatch.index).trim();
+    contextText = contextMatch[0].trim();
+  }
   return {
-    answerText: contextMatch ? beforeHelper.slice(0, contextMatch.index).trim() : beforeHelper,
-    contextText: contextMatch ? contextMatch[1].trim() : '',
+    answerText,
+    contextText,
     helperLines: splitHelperLines(helperText)
   };
 }
@@ -29,9 +33,8 @@ function prepareQuestions(questions){
   for(let i=0; i<normalized.length-1; i++){
     const q = normalized[i];
     const next = normalized[i+1];
-    if(q.group===next.group && (q.contextText || q.helperLines?.length) && !next.contextText && !next.helperLines?.length){
+    if(q.group===next.group && q.contextText && !next.contextText){
       next.contextText = q.contextText;
-      next.helperLines = q.helperLines;
     }
   }
   return normalized;
@@ -40,8 +43,12 @@ const QUESTIONS = prepareQuestions(window.QUESTIONS || []);
 const $ = (id) => document.getElementById(id);
 const state = { quiz: [], index: 0, answers: {}, title: '', mode: 'group', lastQuiz: [] };
 const STORAGE_KEY = 'taxi_quiz_progress_v1';
+const SESSION_KEY = 'taxi_quiz_session_v1';
 
 function loadSaved(){ try{return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}}catch{return {}} }
+function loadSession(){ try{return JSON.parse(localStorage.getItem(SESSION_KEY)) || {}}catch{return {}} }
+function saveSession(){ localStorage.setItem(SESSION_KEY, JSON.stringify({index: state.index, title: state.title, mode: state.mode})); }
+
 function saveGlobal(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(loadSaved())); updateTopStats(); }
 function grouped(){ return QUESTIONS.reduce((acc,q)=>{(acc[q.group] ||= []).push(q); return acc},{}); }
 function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
@@ -95,7 +102,7 @@ function buildCategoryDropdown(){
 }
 function openResetModal(){ $('resetModal').classList.remove('hidden'); $('resetModal').setAttribute('aria-hidden','false'); document.body.classList.add('modal-open'); $('confirmResetBtn').focus(); }
 function closeResetModal(){ $('resetModal').classList.add('hidden'); $('resetModal').setAttribute('aria-hidden','true'); document.body.classList.remove('modal-open'); }
-function resetSavedProgress(){ localStorage.removeItem(STORAGE_KEY); updateTopStats(); renderGroups(); closeResetModal(); }
+function resetSavedProgress(){ localStorage.removeItem(STORAGE_KEY); state.answers = {}; updateTopStats(); renderGroups(); if(!$('quizSection').classList.contains('hidden')) renderQuestion(); closeResetModal(); }
 
 // ── Translation ──
 const trCache = {};
@@ -187,27 +194,38 @@ function renderGroups(){
   });
 }
 
-function startQuiz(qs, title, mode='group'){
+function startQuiz(qs, title, mode='group', fresh=false){
   state.quiz = qs;
-  state.index = 0;
   state.title = title;
   state.mode = mode;
   state.lastQuiz = qs;
-  const saved = loadSaved();
   state.answers = {};
-  qs.forEach(q => { if(saved[q.id]) state.answers[q.id] = saved[q.id]; });
+  if(!fresh){
+    const saved = loadSaved();
+    qs.forEach(q => { if(saved[q.id]) state.answers[q.id] = saved[q.id]; });
+  }
+  const session = loadSession();
+  if(session.title === title && session.index < qs.length) state.index = session.index;
+  else {
+    state.index = 0;
+    for(let i = 0; i < qs.length; i++){
+      if(!state.answers[qs[i].id]){ state.index = i; break; }
+    }
+  }
   $('groupsSection').classList.add('hidden');
   $('resultSection').classList.add('hidden');
   $('reviewList').classList.add('hidden');
   $('quizSection').classList.remove('hidden');
   $('quizTitle').textContent = title;
   $('quizMeta').textContent = `${qs.length} سؤال`;
+  saveSession();
   renderQuestion();
 }
 function answerCurrent(key){
   const q = state.quiz[state.index];
   state.answers[q.id] = key;
   const saved = loadSaved(); saved[q.id]=key; localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+  saveSession();
   renderQuestion(); updateTopStats(); renderGroups();
 }
 function renderQuestion(){
@@ -269,8 +287,8 @@ function showHint(){
     if(key===q.correct) el.classList.add('correct');
   });
 }
-function next(){ if(state.index < state.quiz.length-1){state.index++; renderQuestion();} else finish(); }
-function prev(){ if(state.index>0){state.index--; renderQuestion();} }
+function next(){ if(state.index < state.quiz.length-1){state.index++; saveSession(); renderQuestion();} else finish(); }
+function prev(){ if(state.index>0){state.index--; saveSession(); renderQuestion();} }
 function finish(){
   $('quizSection').classList.add('hidden'); $('resultSection').classList.remove('hidden');
   let correct=0, wrong=0, empty=0;
@@ -307,18 +325,38 @@ $('categoryFilter').addEventListener('change',renderGroups);
 $('categoryToggle').onclick=()=>{ $('categoryDropdown').classList.contains('open') ? closeCategoryDropdown() : openCategoryDropdown(); };
 $('startRandomBtn').onclick=()=>startQuiz(shuffle(QUESTIONS).slice(0,70),'اختبار عشوائي 70 سؤال','exam');
 $('studyAllBtn').onclick=()=>startQuiz(QUESTIONS,'دراسة كل الأسئلة','study');
-$('backBtn').onclick=()=>{ $('quizSection').classList.add('hidden'); $('groupsSection').classList.remove('hidden'); };
+$('backBtn').onclick=()=>{ localStorage.removeItem(SESSION_KEY); $('quizSection').classList.add('hidden'); $('groupsSection').classList.remove('hidden'); };
 $('nextBtn').onclick=next; $('prevBtn').onclick=prev; $('hintBtn').onclick=showHint; $('finishBtn').onclick=finish;
 $('translateBtn').onclick=toggleTranslate;
-$('retryBtn').onclick=()=>startQuiz(state.lastQuiz,state.title,state.mode);
+$('retryBtn').onclick=()=>startQuiz(state.lastQuiz,state.title,state.mode,true);
 $('reviewBtn').onclick=()=>{ $('reviewList').classList.toggle('hidden'); renderReview(true); };
 $('homeBtn').onclick=()=>{ $('resultSection').classList.add('hidden'); $('groupsSection').classList.remove('hidden'); window.scrollTo({top:0,behavior:'smooth'}); };
 $('resetProgressBtn').onclick=openResetModal;
 $('cancelResetBtn').onclick=closeResetModal;
-$('confirmResetBtn').onclick=resetSavedProgress;
+$('confirmResetBtn').onclick=(e)=>{ e.stopPropagation(); resetSavedProgress(); };
 $('resetModal').onclick=(e)=>{ if(e.target.id==='resetModal') closeResetModal(); };
-$('themeBtn').onclick=()=>document.body.classList.toggle('light');
+$('themeBtn').onclick=()=>{ document.body.classList.toggle('light'); const icon=$('themeBtn').querySelector('i'); icon.className=document.body.classList.contains('light') ? 'fa-solid fa-sun' : 'fa-solid fa-moon'; };
 document.addEventListener('click',(e)=>{ if(!$('categoryDropdown').contains(e.target)) closeCategoryDropdown(); });
 document.addEventListener('keydown',(e)=>{ if(e.key==='Escape' && !$('resetModal').classList.contains('hidden')) closeResetModal(); if(e.key==='Escape' && $('categoryDropdown').classList.contains('open')) closeCategoryDropdown(); });
 
 buildCategoryDropdown(); updateTopStats(); renderGroups();
+const session = loadSession();
+if(session.title && session.index > 0){
+  const groupMatch = session.title.includes(' — ') ? session.title.split(' — ')[0] : session.title;
+  const groupQuestions = groupMatch === 'اختبار عشوائي 70 سؤال' ? shuffle(QUESTIONS).slice(0,70) : QUESTIONS.filter(q => q.group === groupMatch);
+  if(groupQuestions.length){
+    state.quiz = groupQuestions;
+    state.title = session.title;
+    state.mode = session.mode;
+    state.lastQuiz = groupQuestions;
+    const saved = loadSaved();
+    state.answers = {};
+    groupQuestions.forEach(q => { if(saved[q.id]) state.answers[q.id] = saved[q.id]; });
+    state.index = Math.min(session.index, groupQuestions.length - 1);
+    $('groupsSection').classList.add('hidden');
+    $('quizSection').classList.remove('hidden');
+    $('quizTitle').textContent = session.title;
+    $('quizMeta').textContent = `${groupQuestions.length} سؤال`;
+    renderQuestion();
+  }
+}
