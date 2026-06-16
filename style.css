@@ -1100,7 +1100,7 @@ body.light .modal-card {
   .question-actions #nextBtn { order: 4; }
   .result-actions { display: grid; grid-template-columns: 1fr; }
   .modal-actions { display: grid; grid-template-columns: 1fr; }
-  .group-actions { grid-template-columns: 1fr; }
+  .group-actions { grid-template-columns: 1fr 1fr; }
   .modal-card { padding: 22px; }
   .topbar { padding: 14px 20px; }
 }
