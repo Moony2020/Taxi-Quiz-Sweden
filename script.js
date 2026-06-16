@@ -223,7 +223,7 @@ function renderQuestion(){
     const div=document.createElement('div');
     div.className='option';
     if(selected===opt.key) div.classList.add('selected');
-    if(state.mode==='study' && selected){
+    if(selected){
       if(opt.key===q.correct) div.classList.add('correct');
       if(selected===opt.key && selected!==q.correct) div.classList.add('wrong');
     }
@@ -249,7 +249,13 @@ function renderDots(){
   const wrap=$('questionDots'); wrap.innerHTML='';
   state.quiz.forEach((q,i)=>{
     const d=document.createElement('div'); d.className='dot'; d.textContent=i+1;
-    if(state.answers[q.id]) d.classList.add('answered'); if(i===state.index) d.classList.add('current');
+    const answer = state.answers[q.id];
+    if(answer){
+      d.classList.add('answered');
+      if(answer === q.correct) d.classList.add('correct');
+      else d.classList.add('wrong');
+    }
+    if(i===state.index) d.classList.add('current');
     d.onclick=()=>{state.index=i; renderQuestion();}; wrap.appendChild(d);
   });
 }

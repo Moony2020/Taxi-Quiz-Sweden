@@ -525,6 +525,8 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 
 .dot:hover { border-color: var(--gold); }
 .dot.answered { background: rgba(53,212,143,.14); color: var(--good); border-color: rgba(53,212,143,.35); }
+.dot.correct { background: rgba(53,212,143,.14); color: var(--good); border-color: rgba(53,212,143,.35); }
+.dot.wrong { background: rgba(245,100,118,.25); color: var(--bad); border-color: rgba(245,100,118,.35); }
 .dot.current { outline: none; box-shadow: 0 0 0 2px var(--gold); }
 
 /* ─── Question Card ─── */
@@ -663,8 +665,8 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 .option.selected { border-color: var(--gold); background: var(--gold-dim); }
 .option.correct { border-color: var(--good); background: rgba(53,212,143,.1); }
 .option.correct .key { background: rgba(53,212,143,.2); color: var(--good); }
-.option.wrong { border-color: var(--bad); background: rgba(245,100,118,.25); }
-.option.wrong .key { background: rgba(245,100,118,.35); color: var(--bad); }
+.option.wrong { border-color: var(--bad); background: rgba(245,100,118,.15); }
+.option.wrong .key { background: rgba(245,100,118,.25); color: var(--bad); }
 
 /* ─── Hint Box ─── */
 .hint-box {
@@ -811,7 +813,7 @@ body.light .score-circle::before {
 }
 
 .tag.good { background: rgba(53,212,143,.15); color: var(--good); }
-.tag.bad { background: rgba(245,100,118,.15); color: var(--bad); }
+.tag.bad { background: rgba(245,100,118,.25); color: var(--bad); }
 
 /* ─── Footer ─── */
 footer {
