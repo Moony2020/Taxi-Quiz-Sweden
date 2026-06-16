@@ -84,6 +84,10 @@
             <span>المجاب: <b id="answeredCount">0</b></span>
             <span>المتبقي: <b id="remainingCount">0</b></span>
           </div>
+          <div id="timerDisplay" class="timer-display">
+            <div class="timer-label">الوقت المتبقي</div>
+            <div id="timerValue" class="timer-value">0:00</div>
+          </div>
           <div id="questionDots" class="question-dots"></div>
           <button id="finishBtn" class="primary-btn full">إنهاء الاختبار</button>
         </aside>
@@ -117,6 +121,9 @@
           <div><b id="correctCount">0</b><span>صحيح</span></div>
           <div><b id="wrongCount">0</b><span>خطأ</span></div>
           <div><b id="emptyCount">0</b><span>بدون إجابة</span></div>
+        </div>
+        <div id="timeStats" class="time-stats hidden">
+          <span>الوقت المستغرق: <b id="elapsedTime">--:--</b></span>
         </div>
         <div class="result-actions">
           <button id="retryBtn" class="primary-btn">إعادة نفس الاختبار</button>

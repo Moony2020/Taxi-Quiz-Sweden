@@ -531,6 +531,68 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 .dot.wrong { background: rgba(245,100,118,.25); color: var(--bad); border-color: rgba(245,100,118,.35); }
 .dot.current { outline: none; box-shadow: 0 0 0 2px var(--gold); }
 
+/* ─── Timer Display ─── */
+.timer-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  margin: 12px 0;
+  background: var(--surface-up);
+  border: 1px solid var(--border);
+  border-radius: var(--rs);
+  text-align: center;
+}
+
+.timer-label {
+  color: var(--muted);
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.timer-value {
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: 'Inter', monospace;
+  transition: color .3s ease;
+}
+
+.timer-value.time-ok { color: var(--good); }
+.timer-value.time-warning { color: #f5c842; }
+.timer-value.time-critical {
+  color: var(--bad);
+  animation: pulse 1s infinite;
+}
+
+.timer-value.time-up {
+  color: var(--bad);
+  font-weight: 900;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.time-stats {
+  text-align: center;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--rs);
+  margin-top: 16px;
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+.time-stats b {
+  color: var(--gold);
+  font-weight: 700;
+  font-family: 'Inter', monospace;
+}
+
 /* ─── Question Card ─── */
 .question-card {
   background: var(--surface);
