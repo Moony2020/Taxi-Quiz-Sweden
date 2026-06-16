@@ -256,7 +256,7 @@ function renderGroups(){
       <div class="group-actions">
         <button class="primary-btn" data-action="start">ابدأ المجموعة</button>
         <button class="ghost-btn" data-action="study">دراسة</button>
-        <button class="ghost-btn" data-action="reset">⟲ مسح</button>
+        <button class="ghost-btn reset-btn" data-action="reset" title="مسح الإجابات">🗑️</button>
       </div>`;
     card.querySelector('[data-action="start"]').onclick=()=>startQuiz(qs, name, 'group');
     card.querySelector('[data-action="study"]').onclick=()=>startQuiz(qs, name+' - دراسة', 'study');

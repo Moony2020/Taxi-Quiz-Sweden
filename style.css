@@ -435,6 +435,13 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 
 .group-actions button { padding: 8px 10px; font-size: .84rem; border-radius: 10px; }
 
+.reset-btn {
+  font-size: 1.1rem;
+  padding: 8px 6px;
+  display: grid;
+  place-items: center;
+}
+
 /* ─── Progress Bar ─── */
 .progress-wrap {
   height: 6px;
