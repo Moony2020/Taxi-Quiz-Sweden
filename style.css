@@ -428,7 +428,7 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 
 .group-actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 7px;
   margin-top: 4px;
 }

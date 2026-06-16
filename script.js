@@ -41,7 +41,7 @@ function prepareQuestions(questions){
 }
 const QUESTIONS = prepareQuestions(window.QUESTIONS || []);
 const $ = (id) => document.getElementById(id);
-const state = { quiz: [], index: 0, answers: {}, title: '', mode: 'group', lastQuiz: [], startTime: null, timeLimit: null, timerInterval: null, elapsedSeconds: 0 };
+const state = { quiz: [], index: 0, answers: {}, title: '', mode: 'group', lastQuiz: [], startTime: null, timeLimit: null, timerInterval: null, elapsedSeconds: 0, resetGroup: null };
 const STORAGE_KEY = 'taxi_quiz_progress_v1';
 const SESSION_KEY = 'taxi_quiz_session_v1';
 
@@ -100,8 +100,38 @@ function buildCategoryDropdown(){
   });
   syncCategoryDropdown();
 }
-function openResetModal(){ $('resetModal').classList.remove('hidden'); $('resetModal').setAttribute('aria-hidden','false'); document.body.classList.add('modal-open'); $('confirmResetBtn').focus(); }
+function openResetModal(groupName=null){
+  state.resetGroup = groupName;
+  const titleEl = $('resetModalTitle');
+  const textEl = $('resetModalText');
+  if(groupName){
+    titleEl.textContent = `هل تريد مسح إجابات "${groupName}"؟`;
+    textEl.textContent = 'سيتم حذف جميع إجاباتك المحفوظة لهذه المجموعة فقط.';
+  } else {
+    titleEl.textContent = 'هل تريد مسح كل الإجابات المحفوظة؟';
+    textEl.textContent = 'سيتم حذف جميع الإجابات المحفوظة من هذا الجهاز ولا يمكن التراجع عن هذه الخطوة.';
+  }
+  $('resetModal').classList.remove('hidden');
+  $('resetModal').setAttribute('aria-hidden','false');
+  document.body.classList.add('modal-open');
+  $('confirmResetBtn').focus();
+}
 function closeResetModal(){ $('resetModal').classList.add('hidden'); $('resetModal').setAttribute('aria-hidden','true'); document.body.classList.remove('modal-open'); }
+function resetGroupProgress(groupName){
+  const saved = loadSaved();
+  const groupQuestions = QUESTIONS.filter(q => q.group === groupName);
+  const questionIds = groupQuestions.map(q => String(q.id));
+  questionIds.forEach(id => { delete saved[id]; });
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+  updateTopStats();
+  renderGroups();
+  if(!$('quizSection').classList.contains('hidden') && state.quiz[0]?.group === groupName){
+    state.answers = {};
+    groupQuestions.forEach(q => { delete state.answers[q.id]; });
+    renderQuestion();
+  }
+  closeResetModal();
+}
 function resetSavedProgress(){ localStorage.removeItem(STORAGE_KEY); state.answers = {}; updateTopStats(); renderGroups(); if(!$('quizSection').classList.contains('hidden')) renderQuestion(); closeResetModal(); }
 
 // ── Translation ──
@@ -226,9 +256,11 @@ function renderGroups(){
       <div class="group-actions">
         <button class="primary-btn" data-action="start">ابدأ المجموعة</button>
         <button class="ghost-btn" data-action="study">دراسة</button>
+        <button class="ghost-btn" data-action="reset">⟲ مسح</button>
       </div>`;
     card.querySelector('[data-action="start"]').onclick=()=>startQuiz(qs, name, 'group');
     card.querySelector('[data-action="study"]').onclick=()=>startQuiz(qs, name+' - دراسة', 'study');
+    card.querySelector('[data-action="reset"]').onclick=()=>openResetModal(name);
     grid.appendChild(card);
   });
 }
@@ -383,7 +415,7 @@ $('reviewBtn').onclick=()=>{ $('reviewList').classList.toggle('hidden'); renderR
 $('homeBtn').onclick=()=>{ stopTimer(); $('resultSection').classList.add('hidden'); $('groupsSection').classList.remove('hidden'); window.scrollTo({top:0,behavior:'smooth'}); };
 $('resetProgressBtn').onclick=openResetModal;
 $('cancelResetBtn').onclick=closeResetModal;
-$('confirmResetBtn').onclick=(e)=>{ e.stopPropagation(); resetSavedProgress(); };
+$('confirmResetBtn').onclick=(e)=>{ e.stopPropagation(); if(state.resetGroup){ resetGroupProgress(state.resetGroup); state.resetGroup = null; } else resetSavedProgress(); };
 $('resetModal').onclick=(e)=>{ if(e.target.id==='resetModal') closeResetModal(); };
 $('themeBtn').onclick=()=>{ document.body.classList.toggle('light'); const icon=$('themeBtn').querySelector('i'); icon.className=document.body.classList.contains('light') ? 'fa-solid fa-sun' : 'fa-solid fa-moon'; };
 document.addEventListener('click',(e)=>{ if(!$('categoryDropdown').contains(e.target)) closeCategoryDropdown(); });
