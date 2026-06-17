@@ -276,7 +276,7 @@ function startQuiz(qs, title, mode='group', fresh=false){
     qs.forEach(q => { if(saved[q.id]) state.answers[q.id] = saved[q.id]; });
   }
   const session = loadSession();
-  if(session.title === title && session.index < qs.length) state.index = session.index;
+  if(!fresh && session.title === title && session.index < qs.length) state.index = session.index;
   else {
     state.index = 0;
     for(let i = 0; i < qs.length; i++){
