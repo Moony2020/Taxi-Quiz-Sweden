@@ -1,0 +1,356 @@
+{
+ "1": {
+  "question": "När får du stanna eller parkera i 15 minuter enligt följande vägmärken?",
+  "options": {
+   "A": "En lördag kl 08:00.",
+   "B": "En vardag men inte före en helgdag kl 17:00.",
+   "C": "En vardag men inte före en helgdag kl 15:00.",
+   "D": "En vardag men inte före en helgdag kl 7:00."
+  }
+ },
+ "2": {
+  "question": "Du börjar köra kl 19 den 3 september enligt vilotids blad. När måste du påbörja nästa dygnsvila enligt vilotids förordning?",
+  "options": {
+   "A": "23:00.",
+   "B": "24:00.",
+   "C": "21:00.",
+   "D": "22:00."
+  }
+ },
+ "3": {
+  "question": "Du ska köra taxi den 2 augusti från kl. 17.00. Hur många timmar får du maximalt köra före nästa viloperiod enligt tidboks bladet så att du inte bryter mot vilotids bestämmelser enligt vilotidsförordning?",
+  "options": {
+   "A": "6 timmar",
+   "B": "7 timmar",
+   "C": "10 timmar",
+   "D": "11 timmar"
+  }
+ },
+ "4": {
+  "question": "Gäller det högerregel i någon av situationer på bilderna av följande?",
+  "options": {
+   "A": "Ja, i enbart situation A.",
+   "B": "Ja, i enbart situation B.",
+   "C": "Ja, i enbart situation C.",
+   "D": "Ja, i enbart situationer A och B.",
+   "E": "Ja, i alla situationer.",
+   "F": "Ingen av situationer."
+  }
+ },
+ "5": {
+  "question": "Du ska fortsätta rakt fram i korsningar. I vilken av situationerna nedan gäller det högerregel?",
+  "options": {
+   "A": "I korsning A.",
+   "B": "I korsning B.",
+   "C": "I båda korsningar A och B.",
+   "D": "Ingen av korsningarna."
+  }
+ },
+ "6": {
+  "question": "I vilken bild måste du stanna oavsett det kommer att finnas trafik eller inte i korsningen?",
+  "options": {
+   "A": "I en situation.",
+   "B": "I två situationer.",
+   "C": "I tre situationer.",
+   "D": "I alla situationer."
+  }
+ },
+ "7": {
+  "question": "Du har tappat taxiförarelegitimation. Till vilken myndighet ska du anmäla detta?",
+  "options": {
+   "A": "Transportstyrelse.",
+   "B": "Trafikverket.",
+   "C": "Polisen.",
+   "D": "Svenska taxiförbundet",
+   "E": "Länsstyrelse."
+  }
+ },
+ "8": {
+  "question": "På hur många år ska taxiförarelegitimationen efter utfärdandet minst förnyas?",
+  "options": {
+   "A": "3 år.",
+   "B": "5 år.",
+   "C": "7 år.",
+   "D": "10 år."
+  }
+ },
+ "9": {
+  "question": "Var ska kontrollrapport av taxameter förvaras?",
+  "options": {
+   "A": "Hos länsstyrelse.",
+   "B": "I fordonet.",
+   "C": "Hos arbetsgivaren.",
+   "D": "Hos vägverket."
+  }
+ },
+ "10": {
+  "question": "Du ska byta körfält. Vad gäller tecken med körriktningsvisaren?",
+  "options": {
+   "A": "Jag måste ge tecken i god tid, men ändå måste försäkra mig att byta körfält utan att hindra andra i onödan.",
+   "B": "Jag måste ge tecken i god tid, och andra trafiken har väjningsplikt mot mig.",
+   "C": "Jag behöver inte ge tecken om det uppenbart för andra att jag ska byta körfält."
+  }
+ },
+ "11": {
+  "question": "Vid vilket av vägmärken innebär bland annat att det är förbjudet att backa?",
+  "options": {}
+ },
+ "12": {
+  "question": "Du får en körning med två kunder till ett hotell som ligger vid gatan på bilden. Får du köra in på gågatan?",
+  "options": {
+   "A": "Ja, om hotellet enbart ligger vid gatan.",
+   "B": "Nej aldrig.",
+   "C": "Ja, om jag ska köra med gångfart.",
+   "D": "Ja, alltid."
+  }
+ },
+ "13": {
+  "question": "Får du lov att använda cykelbana om du kör taxi?",
+  "options": {
+   "A": "Ja, men bara om jag ska korsa cykelbanan.",
+   "B": "Nej, aldrig.",
+   "C": "Ja, om jag ska stanna för att släppa av vid kunds adress.",
+   "D": "Ja, alltid eftersom jag kör taxi."
+  }
+ },
+ "14": {
+  "question": "En poliskontroll begär kopia av körpassrapport på de senaste dygnen som taxibilen kört i taxitrafiken. Hur många kopior av körpassrapport ska du få fram?",
+  "options": {
+   "A": "De två senaste dygnen.",
+   "B": "De tre senaste dygnen.",
+   "C": "De fyra senaste dygnen.",
+   "D": "De fem senaste dygnen.",
+   "E": "De sju senaste dygnen."
+  }
+ },
+ "15": {
+  "question": "Vem är skyldig att ta fram körpasskontroll av taxameter om du kör i taxitrafiken?",
+  "options": {
+   "A": "Tillståndshavare, även om han inte själv kör i taxibilen.",
+   "B": "Endast bilinspektör om han har stoppat taxibilen.",
+   "C": "Föraren, på begäran av bilinspektör eller polis.",
+   "D": "Polisen, genom att använda så kallad P. K knappen."
+  }
+ },
+ "16": {
+  "question": "Vad gäller jämförpriset i en taxibil?",
+  "options": {
+   "A": "Jämförpriset som beräknad ta 20 km som varar 30 minuter",
+   "B": "Jämförpriset ska vara i svart text med gul bakgrund",
+   "C": "Jämförpriset ska vara väl synlig i gul text med svart bakgrund"
+  }
+ },
+ "17": {
+  "question": "Vad innebär vägmärket?",
+  "options": {
+   "A": "Rekommenderat minsta avstånd mellan fordonen är 50 meter.",
+   "B": "Rekommenderat högsta avstånd mellan fordonen är 50 meter.",
+   "C": "Minsta tillåtna avståndet mellan fordonen är 50 meter.",
+   "D": "Högsta tillåtna avståndet mellan fordonen är 50 meter."
+  }
+ },
+ "18": {
+  "question": "Du är anställd i ett taxiföretag. Du får en körning med en buss med 10 sittplatser. Får du ta körningen?",
+  "options": {
+   "A": "Ja, alltid.",
+   "B": "Nej.",
+   "C": "Ja, om jag har körkort med behörighet D1 eller D.",
+   "D": "Nej, aldrig."
+  }
+ },
+ "19": {
+  "question": "Du ska ha en skolskjutskörning. När ska du ha blinklyktornas skolskjutsskylt tända på?",
+  "options": {
+   "A": "Genom hela skolskjuts körningen.",
+   "B": "100m före plats där barnen stiger av eller på och efter platsen.",
+   "C": "På plats där barnen stiger av eller på och 100 m efter platsen.",
+   "D": "100 m före plats där barnen stiger av eller på och till 100 m efter platsen.",
+   "E": "På plats där barnen stiger av eller på."
+  }
+ },
+ "20": {
+  "question": "När ska du erbjuda kunden ett kvitto?",
+  "options": {
+   "A": "Om det bara var en skolskjuts körning.",
+   "B": "Om det bara var en fastpris körning.",
+   "C": "Om det bara var en färdtjänst körning.",
+   "D": "Efter alla typer av köruppdrag."
+  }
+ },
+ "21": {
+  "question": "Vad är orsaken till påkörningar bakifrån?",
+  "options": {
+   "A": "Föraren på den påkörda bilen pratar i mobiltelefon.",
+   "B": "Föraren på den påkörda bilen bromsar hårt omotiverat.",
+   "C": "Föraren på den påkörda bilen kör med trasiga lyktor.",
+   "D": "För kort avstånd mellan fordonen.",
+   "E": "Föraren på den påkörda bilen är tvungen att svänga höger eller vänster."
+  }
+ },
+ "22": {
+  "question": "Du kör på motorväg och polisen hinner ifatt dig och ger signal att du ska stanna. Hur ska du göra?",
+  "options": {
+   "A": "Jag kör till nästa trafikkontrollplats och stanna där.",
+   "B": "Jag kör till nästa avfart och stannar på en lämplig plats.",
+   "C": "Jag kör till nästa vändplats och stannar där.",
+   "D": "Jag kör till vägrenen och stannar enligt polis anvisning."
+  }
+ },
+ "23": {
+  "question": "Du kommer fram till korsningen på bilden. Hur bör du uppträda?",
+  "options": {
+   "A": "Titta till höger i korsningen.",
+   "B": "Placera bilen mitt på vägen för att ha avstånd i sidled.",
+   "C": "Sänka hastigheten."
+  }
+ },
+ "24": {
+  "question": "Vad anger den gula linjemarkeringen?",
+  "options": {
+   "A": "Förbud att köra på den gula heldragna linjen.",
+   "B": "Förbud att parkera.",
+   "C": "Förbud att stanna och parkera."
+  }
+ },
+ "25": {
+  "question": "Får du köra vid något tillfälle över ett spärr område eller heldragen linje?",
+  "options": {
+   "A": "Ja, alltid.",
+   "B": "Ja, om jag ska stanna för att lämna av eller ta upp en passagerare.",
+   "C": "Ja, om jag vänder för att får en körning på den motsatta hållet.",
+   "D": "Ja, om jag ska passera ett hinder på vägen.",
+   "E": "Nej, aldrig."
+  }
+ },
+ "26": {
+  "question": "Vilken ljuskombination får du använda i dagtid?",
+  "options": {
+   "A": "Helljus och parkeringsljus.",
+   "B": "Halvljus och dimljus.",
+   "C": "Helljus och dimljus.",
+   "D": "Halvljus och parkeringsljus."
+  }
+ },
+ "27": {
+  "question": "Var kan du inte stanna och släppa passagerare?",
+  "options": {
+   "A": "På huvudled utanför tättbebyggt område.",
+   "B": "På huvudled innanför tättbebyggt område.",
+   "C": "Så att du skymmer trafiksignal.",
+   "D": "Framför en fastighets infart."
+  }
+ },
+ "28": {
+  "question": "Du får en handikappad kvinna som är 20 åring som är rullstolburen. Hon vägrar ta på sig säkerhetsbälte under körningen. Hur ska du uppträda?",
+  "options": {
+   "A": "Hon får sitta i bilen utan att använda bältet för att rullstolburna är undantagna från bälte kravet.",
+   "B": "Jag ska försöka övertala henne att använda bältet, men inte tvinga henne.",
+   "C": "Jag ska tvinga henne att använda bältet för att jag ansvarar för det för att jag är yrkes förar."
+  }
+ },
+ "29": {
+  "question": "Vem har rätt att köra taxi?",
+  "options": {
+   "A": "20- åring och har körkort med behörighet B i två år.",
+   "B": "21- åring och har körkort med behörighet D sedan 1 månad.",
+   "C": "20- åring och har körkort med behörighet B i ett år."
+  }
+ },
+ "30": {
+  "question": "Vad innebär totalvikt?",
+  "options": {
+   "A": "Summan av bruttovikt med maximilasten.",
+   "B": "Summan av tjänstvikt med maximilasten.",
+   "C": "Summan av bruttovikt med tjänstevikt."
+  }
+ },
+ "31": {
+  "question": "Hur mycket får dygnetsvila vara under 24 -timmers viloperiod?",
+  "options": {
+   "A": "11 timmar och kan dela upp den till på en 8 timmar och en på3 timmar.",
+   "B": "12 timmar och kan dela upp den på en 8 timmar och vardera på två timmar.",
+   "C": "10 timmar oavbruten.",
+   "D": "14 timmar och kan dela upp den på en 10 timmar och två vardera två timmar."
+  }
+ },
+ "32": {
+  "question": "Du ska fortsätta rakt fram på i korsningen, trafikljusen är ur funktion. Vad ska du göra?",
+  "options": {
+   "A": "Jag ska stanna vid stopp linjen och lämna företräda åt den svängande bilen.",
+   "B": "Jag ska stanna vid stoplinje men behöver inte lämna företräde åt den svängande bilen.",
+   "C": "Jag ska inte stanna vid stoplinje och fortsätta rakt fram utan att lämna företräde åt den svängande bilen."
+  }
+ },
+ "33": {
+  "question": "Du ska svänga vänster i korsningen på bilden. Hur ska du uppträda?",
+  "options": {
+   "A": "Jag har väjningsplikt mot all korsande trafik.",
+   "B": "Jag har väjningsplikt mot trafiken från höger.",
+   "C": "All korsande trafik har väjningsplikt mot mig.",
+   "D": "Jag har väjningsplikt mot mötande trafiken.",
+   "E": "Jag har väjningsplikt mot trafiken från vänster."
+  }
+ },
+ "34": {
+  "question": "Vad innebär vägmärket?",
+  "options": {
+   "A": "Skymd korsning längre fram.",
+   "B": "Farlig korsning längre fram.",
+   "C": "Jag ska stanna i korsningen.",
+   "D": "Jag har företräde i korsningen.",
+   "E": "Korsning där högerregel gäller."
+  }
+ },
+ "35": {
+  "question": "Får föraren i det silver färgade bilen köra om som på bilden?",
+  "options": {
+   "A": "Ja, för att han kör på en huvudled.",
+   "B": "Nej, för att han kör om vid en korsning.",
+   "C": "Nej, för att han kör om strax före ett obevakat övergångställe.",
+   "D": "Ja, alltid."
+  }
+ },
+ "36": {
+  "question": "Vad innebär det med defensiv körning?",
+  "options": {
+   "A": "Jag ska alltid köra långsamt för att lugna ned trafiken.",
+   "B": "Jag ska alltid anpassa hastigheten efter situationen och har god handlingsberedskap.",
+   "C": "Jag ska alltid anpassa hastigheten efter gällande hastighetsbegränsningen.",
+   "D": "Jag ska alltid hålla hastigheten och anpassa mig efter trafikrytmen."
+  }
+ },
+ "37": {
+  "question": "Du jobbar som anställd i ett taxiföretag som inte använder fasta priser. Vad gäller det för jämförpriset?",
+  "options": {
+   "A": "Du ska alltid kunna tala om exaktaresekostnaden för resan före färden.",
+   "B": "Du ska alltid kunna ta fram en jämförpris lista i bilen när kunden begär det.",
+   "C": "Du ska alltid ha ett skriftligt jämförpris tillgänglig i bilen."
+  }
+ },
+ "38": {
+  "question": "Den första bilen har stannat vid stoplinjen i korsningen. Måste föraren i den andra bilen stanna en gång till innan han eller hon kör ut på den korsande vägen?",
+  "options": {
+   "A": "Nej, inte om sikten är god åt båda hållen.",
+   "B": "Nej, inte om den korsande vägen är fri från trafik.",
+   "C": "Ja, föraren måste stanna vid stoplinjen oavsett finns det trafik eller inte i korsningen."
+  }
+ },
+ "39": {
+  "question": "Vilket av följande kan inte räknas som taxi?",
+  "options": {
+   "A": "Godstransport med lastbil som har totalvikt över 3,5 ton.",
+   "B": "Skolskjuts körning med personbil.",
+   "C": "Skolskjuts körning med en personbil som är registrerad som buss."
+  }
+ },
+ "40": {
+  "question": "Vilket av följande transporter omfattas av vilotids bestämmelser för taxitrafik enligt vilotids förordning?",
+  "options": {
+   "A": "Persontransport med personbil efter fastställd tidtabell",
+   "B": "Godstransport med personbil efter fastställd tidtabell",
+   "C": "Godstransport med motorcykel efter fastställd tidtabell",
+   "D": "Skolskjuts körning med så kallad mini buss.",
+   "E": "Gods- eller persontransport med personbil efter fastställd tidtabell"
+  }
+ }
+}

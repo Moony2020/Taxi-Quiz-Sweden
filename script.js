@@ -5,7 +5,7 @@ function parseMergedOptionText(text){
   let helperText = helperMatch ? raw.slice(helperMatch.index).replace(/\s*Särtryck\/hjälpmedel\s*/i,'').trim() : '';
   let mainText = helperMatch ? raw.slice(0, helperMatch.index).trim() : raw;
   let contextText = '', answerText = mainText;
-  const contextMatch = mainText.match(/\s+(Du\b|En kund\b|Din\b|Resan\b).*$/i);
+  const contextMatch = mainText.match(/\s+(Du\b|En kund\b|Din\b|Resan\b).*$/);
   if(contextMatch){
     answerText = mainText.slice(0, contextMatch.index).trim();
     contextText = contextMatch[0].trim();
@@ -16,8 +16,25 @@ function parseMergedOptionText(text){
     helperLines: splitHelperLines(helperText)
   };
 }
+// Map of questions that have an image extracted from the source PDF.
+// Key: group name, Value: Set of page numbers that have an image file under images/.
+const QUESTION_IMAGES = {
+  'LAGSTIFNING-1': new Set([1,2,5,6,11,12,13,20,21,23,26,29,30,31,33,35,36,40]),
+  'LAGSTIFNING-2': new Set([1,2,3,4,5,6,11,12,17,19,23,24,32,33,34,35,38]),
+  'LAGSTIFNING-3': new Set([3,4,5,6,12,13,14,16,18,22,24,28,29,30,31,34,36,38]),
+  'LAGSTIFNING-4': new Set([1,10,11,12,15,16,17,33,38,40])
+};
+function imageForQuestion(q){
+  const pages = QUESTION_IMAGES[q.group];
+  if(pages && pages.has(q.page)){
+    const slug = q.group.toLowerCase().replace('lagstifning-','lag');
+    return `images/${slug}-p${q.page}.png`;
+  }
+  return null;
+}
 function prepareQuestions(questions){
   const normalized = questions.map(q=>({ ...q, options: q.options.map(opt=>({ ...opt })) }));
+  normalized.forEach(q=>{ const img = imageForQuestion(q); if(img) q.image = img; });
   // Pass 1: extract context from each question's options and apply to the question itself
   normalized.forEach((q)=>{
     q.options.forEach((opt)=>{
@@ -63,6 +80,17 @@ function renderQuestionInfo(q){
   if(!parts.length){ box.classList.add('hidden'); box.innerHTML=''; return; }
   box.innerHTML = parts.join('');
   box.classList.remove('hidden');
+}
+function renderQuestionImage(q){
+  const box = $('questionImage');
+  if(!box) return;
+  if(q.image){
+    box.innerHTML = `<img src="${q.image}" alt="${q.group} - ${q.page}" />`;
+    box.classList.remove('hidden');
+  } else {
+    box.innerHTML = '';
+    box.classList.add('hidden');
+  }
 }
 function closeCategoryDropdown(){ $('categoryMenu').classList.add('hidden'); $('categoryDropdown').classList.remove('open'); $('categoryToggle').setAttribute('aria-expanded','false'); }
 function openCategoryDropdown(){ $('categoryMenu').classList.remove('hidden'); $('categoryDropdown').classList.add('open'); $('categoryToggle').setAttribute('aria-expanded','true'); }
@@ -323,11 +351,13 @@ function renderQuestion(){
     div.onclick=()=>answerCurrent(opt.key);
     list.appendChild(div);
   });
+  renderQuestionImage(q);
   $('hintBox').classList.add('hidden');
   $('hintBox').innerHTML='';
   $('translationBox').classList.add('hidden');
   $('prevBtn').disabled = state.index===0;
   $('nextBtn').textContent = state.index===state.quiz.length-1 ? 'إنهاء' : 'التالي';
+  $('nextBtn').disabled = !state.answers[q.id];
   updateQuizStats();
   renderDots();
   if (trMode) applyTranslation();
@@ -361,18 +391,59 @@ function showHint(){
     if(key===q.correct) el.classList.add('correct');
   });
 }
-function next(){ if(state.index < state.quiz.length-1){state.index++; saveSession(); renderQuestion();} else finish(); }
+function next(){ const cur=state.quiz[state.index]; if(cur && !state.answers[cur.id]) return; if(state.index < state.quiz.length-1){state.index++; saveSession(); renderQuestion();} else finish(); }
 function prev(){ if(state.index>0){state.index--; saveSession(); renderQuestion();} }
+function launchConfetti(){
+  const canvas = $('confettiCanvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  const colors = ['#f5c842','#7c5af0','#35d48f','#f56476','#ffffff','#ffe98a','#a07cff'];
+  const pieces = Array.from({length:160}, ()=>({
+    x: Math.random()*canvas.width,
+    y: Math.random()*-canvas.height,
+    w: Math.random()*10+5,
+    h: Math.random()*6+3,
+    color: colors[Math.floor(Math.random()*colors.length)],
+    rot: Math.random()*360,
+    vx: (Math.random()-0.5)*3,
+    vy: Math.random()*4+2,
+    vr: (Math.random()-0.5)*6,
+    opacity: 1
+  }));
+  const start = performance.now();
+  const duration = 4000;
+  function draw(now){
+    const elapsed = now - start;
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    pieces.forEach(p=>{
+      p.x += p.vx; p.y += p.vy; p.rot += p.vr;
+      if(elapsed > duration*0.6) p.opacity = Math.max(0, p.opacity - 0.012);
+      ctx.save();
+      ctx.globalAlpha = p.opacity;
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot*Math.PI/180);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+      ctx.restore();
+    });
+    if(elapsed < duration + 500) requestAnimationFrame(draw);
+    else ctx.clearRect(0,0,canvas.width,canvas.height);
+  }
+  requestAnimationFrame(draw);
+}
+
 function finish(){
   stopTimer();
   $('quizSection').classList.add('hidden'); $('resultSection').classList.remove('hidden');
+  launchConfetti();
   let correct=0, wrong=0, empty=0;
   state.quiz.forEach(q=>{ const a=state.answers[q.id]; if(!a) empty++; else if(a===q.correct) correct++; else wrong++; });
   const pct = Math.round(correct/state.quiz.length*100);
   $('resultTitle').textContent = state.title;
   $('scorePercent').textContent = pct+'%';
   document.querySelector('.score-circle').style.background = `conic-gradient(var(--gold) ${pct*3.6}deg, rgba(255,255,255,.12) 0deg)`;
-  $('correctCount').textContent=correct; $('wrongCount').textContent=wrong; $('emptyCount').textContent=empty;
+  $('correctCount').textContent=correct; $('wrongCount').textContent=wrong;
   const timeStatsEl = $('timeStats');
   if(timeStatsEl){
     const mins = Math.floor(state.elapsedSeconds/60);

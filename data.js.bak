@@ -1,11 +1,11 @@
-window.QUESTIONS = [
+﻿window.QUESTIONS = [
   {
     "id": 1,
     "no": 1,
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 1,
-    "question": "Körfältet med vägmärket på bilden är avsett för bussar. Finns det andra fordon som får köra här?",
+    "question": "Körfältet med vägmärket på bilden är avsett för bussar.\nFinns det andra fordon som får köra här?",
     "options": [
       {
         "key": "A",
@@ -59,7 +59,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 3,
-    "question": "Du kommer fram till en korsning där du har väjningsplikt. Hur ska andra fordon i korsningen vara säkra på att du ska iaktta väjningsplikt?",
+    "question": "Du kommer fram till en korsning där du har väjningsplikt.\nHur ska andra fordon i korsningen vara säkra på att du ska iaktta väjningsplikt?",
     "options": [
       {
         "key": "A",
@@ -82,7 +82,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 4,
-    "question": "Du börjar köra taxi kl 08:00 efter en dygnsvila. Du gör ett uppehåll i arbetet mellan 09:00- 13:00. När måste du sluta köra taxi och börja nästa dygnsvila enligt vilotids förordning och bestämmelser?",
+    "question": "Du börjar köra taxi kl 08:00 efter en dygnsvila. Du gör ett uppehåll i arbetet mellan 09:00-\n13:00.\nNär måste du sluta köra taxi och börja nästa dygnsvila enligt vilotids förordning och\nbestämmelser?",
     "options": [
       {
         "key": "A",
@@ -113,7 +113,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 5,
-    "question": "Du hade en körning i en fastighet. Nu ska du ut från fastigheten och är tvungen att korsa en gång- och cykelbana. Har du väjningsplikt mot någon?",
+    "question": "Du hade en körning i en fastighet. Nu ska du ut från fastigheten och är tvungen att korsa en\ngång- och cykelbana.\nHar du väjningsplikt mot någon?",
     "options": [
       {
         "key": "A",
@@ -140,7 +140,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 6,
-    "question": "Det är en vanlig måndag och även dagen efter är en helgfri dag. Vad innebär vägmärkeskombinationen?",
+    "question": "Det är en vanlig måndag och även dagen efter är en helgfri dag.\nVad innebär vägmärkeskombinationen?",
     "options": [
       {
         "key": "A",
@@ -190,7 +190,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 8,
-    "question": "Du ska byta körfält. Du kontrollerar trafiken i vänster körfält och ger tecken. Vad ska du göra sedan?",
+    "question": "Du ska byta körfält.\nDu kontrollerar trafiken i vänster körfält och ger tecken.\nVad ska du göra sedan?",
     "options": [
       {
         "key": "A",
@@ -244,7 +244,7 @@ window.QUESTIONS = [
     "options": [
       {
         "key": "A",
-        "text": "Kopia av yrkestrafikmärke -kontroll. – och plomberings protokoll av taxameter."
+        "text": "Kopia av yrkestrafikmärke -kontroll. - och plomberings protokoll av taxameter."
       },
       {
         "key": "B",
@@ -290,7 +290,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 12,
-    "question": "Du kör i taxi trafiken. Vad gäller dig på bilden?",
+    "question": "Du kör i taxi trafiken.\nVad gäller dig på bilden?",
     "options": [
       {
         "key": "A",
@@ -317,7 +317,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 13,
-    "question": "Du kommer fram till cirkulationsplatsen på bilden. Du ska till höger. Har du väjningsplikt mot fordonen inne i cirkulationsplatsen?",
+    "question": "Du kommer fram till cirkulationsplatsen på bilden. Du ska till höger.\n Har du väjningsplikt mot fordonen inne i cirkulationsplatsen?",
     "options": [
       {
         "key": "A",
@@ -506,7 +506,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 20,
-    "question": "Du har en kund som du ska släppa vid tegelhuset på höger sidan. Får du göra det?",
+    "question": "Du har en kund som du ska släppa vid tegelhuset på höger sidan.\nFår du göra det?",
     "options": [
       {
         "key": "A",
@@ -529,7 +529,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 21,
-    "question": "Du ska svänga höger på bilderna. På vilken bild ska gångtrafikanter där du korsar vägen har grönt ljus samtidigt när du kör?",
+    "question": "Du ska svänga höger på bilderna. På vilken bild ska gångtrafikanter där du korsar vägen\nhar grönt ljus samtidigt när du kör?",
     "options": [
       {
         "key": "A",
@@ -602,7 +602,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 24,
-    "question": "Du jobbar som anställd i ett taxiföretag. Vem är skyldig för anteckningar på vilotidboken att den är rätt ifylld?",
+    "question": "Du jobbar som anställd i ett taxiföretag.\nVem är skyldig för anteckningar på vilotidboken att den är rätt ifylld?",
     "options": [
       {
         "key": "A",
@@ -656,7 +656,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 26,
-    "question": "Ditt arbetspass börjar kl. 07.00 den 30 september. När du påbörjat ditt körpass får du besked om en förbeställd långkörning som börjar klockan 17.00 och beräknas ta 7 timmar. När måste du senast påbörja en ny viloperiod för att kunna utföra långkörningen enligt tidboksbladet?",
+    "question": "Ditt arbetspass börjar kl. 07.00 den 30 september. När du påbörjat ditt körpass får du\nbesked om en förbeställd långkörning som börjar klockan 17.00 och beräknas ta 7 timmar.\nNär måste du senast påbörja en ny viloperiod\nför att kunna utföra långkörningen enligt\ntidboksbladet?",
     "options": [
       {
         "key": "A",
@@ -718,7 +718,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 28,
-    "question": "Vilken eller vilka dörrar måste vara låst inifrån för passagerare om din taxi används för skolskjuts?",
+    "question": "Vilken eller vilka dörrar måste vara låst inifrån för passagerare om din taxi används för\nskolskjuts?",
     "options": [
       {
         "key": "A",
@@ -749,7 +749,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 29,
-    "question": "Du kör på en väg där hastigheten är begränsad till 50 km/tim. Bussen har just stannat vid busshållplatsen. Du ska fortsätta rakt fram. Hur ska du göra?",
+    "question": "Du kör på en väg där hastigheten är begränsad till 50 km/tim. Bussen har just stannat vid\nbusshållplatsen.\nDu ska fortsätta rakt fram.\nHur ska du göra?",
     "options": [
       {
         "key": "A",
@@ -772,7 +772,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 30,
-    "question": "Du kör på denna väg med 50 km/tim hastighet. Hur ska du bete dig i denna situation?",
+    "question": "Du kör på denna väg med 50 km/tim hastighet.\nHur ska du bete dig i denna situation?",
     "options": [
       {
         "key": "A",
@@ -795,7 +795,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 31,
-    "question": "Du kör i 50 km/tim hastighet och får möte med en bil. Bilen framför kör sakta. Vad ska du först göra i denna situation för att undvika en kollision?",
+    "question": "Du kör i 50 km/tim hastighet och får möte med en bil.\nBilen framför kör sakta.\nVad ska du först göra i denna situation för att undvika en kollision?",
     "options": [
       {
         "key": "A",
@@ -826,7 +826,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 32,
-    "question": "Du får en körning med din taxi. När du kommer fram till adressen där du ska hämta kunder ser du fem passagerare som väntar. Din bil är inrättad för fyra personer. Vad ska du göra?",
+    "question": "Du får en körning med din taxi.\nNär du kommer fram till adressen där du ska hämta kunder ser du fem passagerare som\nväntar.\nDin bil är inrättad för fyra personer.\nVad ska du göra?",
     "options": [
       {
         "key": "A",
@@ -976,7 +976,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 38,
-    "question": "Du ska stanna på en gata där det är mörkt och saknar belysning. Du ska vänta på kunden som dröjer. Vilket ljus ska du använda?",
+    "question": "Du ska stanna på en gata där det är mörkt och saknar belysning. Du ska vänta på kunden\nsom dröjer.\nVilket ljus ska du använda?",
     "options": [
       {
         "key": "A",
@@ -1003,7 +1003,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-1.pdf",
     "group": "LAGSTIFNING-1",
     "page": 39,
-    "question": "En kund betalar resekostnaden kontant. Är du skyldig för om du ska skriva ut ett kvitto eller följesedel?",
+    "question": "En kund betalar resekostnaden kontant.\nÄr du skyldig för om du ska skriva ut ett kvitto eller följesedel?",
     "options": [
       {
         "key": "A",
@@ -1061,23 +1061,23 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 1,
-    "question": "När får du stanna eller parkera i 15 minuter enligt följande vägmärken?",
+    "question": "När f",
     "options": [
       {
         "key": "A",
-        "text": "En lördag kl 08:00."
+        "text": "E"
       },
       {
         "key": "B",
-        "text": "En vardag men inte före en helgdag kl 17:00."
+        "text": "E"
       },
       {
         "key": "C",
-        "text": "En vardag men inte före en helgdag kl 15:00."
+        "text": "E"
       },
       {
         "key": "D",
-        "text": "En vardag men inte före en helgdag kl 7:00."
+        "text": "E får du stanna En lördag k En vardag m En vardag m En vardag m a eller parke kl 08:00. men inte för men inte för men inte för era i 15 min re en helgda re en helgda re en helgda nuter enligt ag kl 17:00. ag kl 15:00. ag kl 7:00. A följande vä . . ägmärken?"
       }
     ],
     "correct": "A"
@@ -1088,7 +1088,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 2,
-    "question": "Du börjar köra kl 19 den 3 september enligt vilotids blad. När måste du påbörja nästa dygnsvila enligt vilotids förordning?",
+    "question": "Du börjar köra kl 19 den 3 september enligt vilotids blad.\nNär måste du påbörja nästa dygnsvila enligt vilotids förordning?",
     "options": [
       {
         "key": "A",
@@ -1115,7 +1115,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 3,
-    "question": "Du ska köra taxi den 2 augusti från kl. 17.00. Hur många timmar får du maximalt köra före nästa viloperiod enligt tidboks bladet så att du inte bryter mot vilotids bestämmelser enligt vilotidsförordning?",
+    "question": "Du ska köra taxi den 2 augusti från kl. 17.00.\nHur många timmar får du maximalt köra före nästa viloperiod enligt tidboks bladet så att du\ninte bryter mot vilotids bestämmelser enligt vilotidsförordning?",
     "options": [
       {
         "key": "A",
@@ -1142,31 +1142,35 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 4,
-    "question": "Gäller det högerregel i någon av situationer på bilderna av följande?",
+    "question": "Gälle",
     "options": [
       {
         "key": "A",
-        "text": "Ja, i enbart situation A."
+        "text": "J"
       },
       {
         "key": "B",
-        "text": "Ja, i enbart situation B."
+        "text": "J"
       },
       {
         "key": "C",
-        "text": "Ja, i enbart situation C."
+        "text": "J"
       },
       {
         "key": "D",
-        "text": "Ja, i enbart situationer A och B."
+        "text": "J"
       },
       {
         "key": "E",
-        "text": "Ja, i alla situationer."
+        "text": "J"
       },
       {
         "key": "F",
-        "text": "Ingen av situationer."
+        "text": "I er det högerr Ja, i enbart Ja, i enbart Ja, i enbart Ja, i enbart Ja, i alla situ Ingen av sit regel i någo situation A situation B situation C situationer uationer. tuationer. on av situati"
+      },
+      {
+        "key": "A",
+        "text": ". . A och B. ioner på bild C derna av följande?"
       }
     ],
     "correct": "C"
@@ -1177,7 +1181,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 5,
-    "question": "Du ska fortsätta rakt fram i korsningar. I vilken av situationerna nedan gäller det högerregel?",
+    "question": "Du ska fortsätta rakt fram i korsningar.\n I vilken av situationerna nedan gäller det högerregel?",
     "options": [
       {
         "key": "A",
@@ -1204,23 +1208,23 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 6,
-    "question": "I vilken bild måste du stanna oavsett det kommer att finnas trafik eller inte i korsningen?",
+    "question": "I vilk",
     "options": [
       {
         "key": "A",
-        "text": "I en situation."
+        "text": "I en"
       },
       {
         "key": "B",
-        "text": "I två situationer."
+        "text": "I två"
       },
       {
         "key": "C",
-        "text": "I tre situationer."
+        "text": "I tre"
       },
       {
         "key": "D",
-        "text": "I alla situationer."
+        "text": "I alla ken bild mås situation. situationer. situationer. a situationer ste du stann . r. na oavsett det kommer a B att finnas trafik eller inte i korsningen?"
       }
     ],
     "correct": "B"
@@ -1231,7 +1235,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 7,
-    "question": "Du har tappat taxiförarelegitimation. Till vilken myndighet ska du anmäla detta?",
+    "question": "Du har tappat taxiförarelegitimation.\nTill vilken myndighet ska du anmäla detta?",
     "options": [
       {
         "key": "A",
@@ -1316,7 +1320,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 10,
-    "question": "Du ska byta körfält. Vad gäller tecken med körriktningsvisaren?",
+    "question": "Du ska byta körfält.\n\nVad gäller tecken med körriktningsvisaren?",
     "options": [
       {
         "key": "A",
@@ -1366,7 +1370,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 12,
-    "question": "Du får en körning med två kunder till ett hotell som ligger vid gatan på bilden. Får du köra in på gågatan?",
+    "question": "Du får en körning med två kunder till ett hotell som ligger vid gatan på bilden.\nFår du köra in på gågatan?",
     "options": [
       {
         "key": "A",
@@ -1420,7 +1424,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 14,
-    "question": "En poliskontroll begär kopia av körpassrapport på de senaste dygnen som taxibilen kört i taxitrafiken. Hur många kopior av körpassrapport ska du få fram?",
+    "question": "En poliskontroll begär kopia av körpassrapport på de senaste dygnen som taxibilen kört i\ntaxitrafiken.\n\nHur många kopior av körpassrapport ska du få fram?",
     "options": [
       {
         "key": "A",
@@ -1501,23 +1505,23 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 17,
-    "question": "Vad innebär vägmärket?",
+    "question": "Vad",
     "options": [
       {
         "key": "A",
-        "text": "Rekommenderat minsta avstånd mellan fordonen är 50 meter."
+        "text": "R f"
       },
       {
         "key": "B",
-        "text": "Rekommenderat högsta avstånd mellan fordonen är 50 meter."
+        "text": "R f"
       },
       {
         "key": "C",
-        "text": "Minsta tillåtna avståndet mellan fordonen är 50 meter."
+        "text": "M f"
       },
       {
         "key": "D",
-        "text": "Högsta tillåtna avståndet mellan fordonen är 50 meter."
+        "text": "H f d innebär vä Rekommen fordonen är Rekommen fordonen är Minsta tillå fordonen är Högsta tillå fordonen är ägmärket? nderat min r 50 meter. nderat högs r 50 meter. åtna avstånd r 50 meter. åtna avstånd r 50 meter. sta avstånd sta avstånd det mellan det mellan mellan mellan"
       }
     ],
     "correct": "C"
@@ -1528,7 +1532,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 18,
-    "question": "Du är anställd i ett taxiföretag. Du får en körning med en buss med 10 sittplatser. Får du ta körningen?",
+    "question": "Du är anställd i ett taxiföretag.\nDu får en körning med en buss med 10 sittplatser.\nFår du ta körningen?",
     "options": [
       {
         "key": "A",
@@ -1555,7 +1559,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 19,
-    "question": "Du ska ha en skolskjutskörning. När ska du ha blinklyktornas skolskjutsskylt tända på?",
+    "question": "Du ska ha en skolskjutskörning.\nNär ska du ha blinklyktornas skolskjutsskylt tända på?",
     "options": [
       {
         "key": "A",
@@ -1644,7 +1648,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 22,
-    "question": "Du kör på motorväg och polisen hinner ifatt dig och ger signal att du ska stanna. Hur ska du göra?",
+    "question": "Du kör på motorväg och polisen hinner ifatt dig och ger signal att du ska stanna.\nHur ska du göra?",
     "options": [
       {
         "key": "A",
@@ -1671,7 +1675,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 23,
-    "question": "Du kommer fram till korsningen på bilden. Hur bör du uppträda?",
+    "question": "Du kommer fram till korsningen på bilden.\nHur bör du uppträda?",
     "options": [
       {
         "key": "A",
@@ -1694,19 +1698,19 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 24,
-    "question": "Vad anger den gula linjemarkeringen?",
+    "question": "Vad",
     "options": [
       {
         "key": "A",
-        "text": "Förbud att köra på den gula heldragna linjen."
+        "text": "Förb"
       },
       {
         "key": "B",
-        "text": "Förbud att parkera."
+        "text": "Förb"
       },
       {
         "key": "C",
-        "text": "Förbud att stanna och parkera."
+        "text": "Förb anger den g bud att köra ud att parke ud att stann gula linjem på den gula era. na och parke arkeringen? a heldragna era. ? linjen."
       }
     ],
     "correct": "B"
@@ -1802,7 +1806,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 28,
-    "question": "Du får en handikappad kvinna som är 20 åring som är rullstolburen. Hon vägrar ta på sig säkerhetsbälte under körningen. Hur ska du uppträda?",
+    "question": "Du får en handikappad kvinna som är 20 åring som är rullstolburen. Hon vägrar ta på sig\nsäkerhetsbälte under körningen.\nHur ska du uppträda?",
     "options": [
       {
         "key": "A",
@@ -1871,7 +1875,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 31,
-    "question": "Hur mycket får dygnetsvila vara under 24 -timmers viloperiod?",
+    "question": "Hur mycket får dygnetsvila vara under\n24 -timmers viloperiod?",
     "options": [
       {
         "key": "A",
@@ -1921,7 +1925,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 33,
-    "question": "Du ska svänga vänster i korsningen på bilden. Hur ska du uppträda?",
+    "question": "Du ska svänga vänster i korsningen på bilden.\nHur ska du uppträda?",
     "options": [
       {
         "key": "A",
@@ -1952,27 +1956,27 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 34,
-    "question": "Vad innebär vägmärket?",
+    "question": "Vad",
     "options": [
       {
         "key": "A",
-        "text": "Skymd korsning längre fram."
+        "text": "Skym"
       },
       {
         "key": "B",
-        "text": "Farlig korsning längre fram."
+        "text": "Farli"
       },
       {
         "key": "C",
-        "text": "Jag ska stanna i korsningen."
+        "text": "Jag s"
       },
       {
         "key": "D",
-        "text": "Jag har företräde i korsningen."
+        "text": "Jag h"
       },
       {
         "key": "E",
-        "text": "Korsning där högerregel gäller."
+        "text": "Kors d innebär vä md korsning g korsning ska stanna i har företräd ning där hö ägmärket? g längre fram längre fram korsningen e i korsning ögerregel gä m. m. n. gen. äller."
       }
     ],
     "correct": "E"
@@ -2037,7 +2041,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 37,
-    "question": "Du jobbar som anställd i ett taxiföretag som inte använder fasta priser. Vad gäller det för jämförpriset?",
+    "question": "Du jobbar som anställd i ett taxiföretag som inte använder fasta priser.\nVad gäller det för jämförpriset?",
     "options": [
       {
         "key": "A",
@@ -2060,19 +2064,19 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 38,
-    "question": "Den första bilen har stannat vid stoplinjen i korsningen. Måste föraren i den andra bilen stanna en gång till innan han eller hon kör ut på den korsande vägen?",
+    "question": "Den\nMåste f\nkorsand",
     "options": [
       {
         "key": "A",
-        "text": "Nej, inte om sikten är god åt båda hållen."
+        "text": ""
       },
       {
         "key": "B",
-        "text": "Nej, inte om den korsande vägen är fri från trafik."
+        "text": ""
       },
       {
         "key": "C",
-        "text": "Ja, föraren måste stanna vid stoplinjen oavsett finns det trafik eller inte i korsningen."
+        "text": "n första bilen föraren i de de vägen? Nej, h Nej, fr Ja, fö o k n har stanna en andra bi inte om sikt hållen. inte om den rån trafik. öraren måste oavsett finns korsningen. at vid stopli ilen stanna ten är god å n korsande v e stanna vid s det trafik e C injen i korsn en gång t åt båda vägen är fri d stoplinjen eller inte i ningen. ill innan han eller hon kör ut på den"
       }
     ],
     "correct": "C"
@@ -2106,7 +2110,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-2.pdf",
     "group": "LAGSTIFNING-2",
     "page": 40,
-    "question": "Vilket av följande transporter omfattas av vilotids bestämmelser för taxitrafik enligt vilotids förordning?",
+    "question": "Vilket av följande transporter omfattas av vilotids bestämmelser för taxitrafik enligt\nvilotids förordning?",
     "options": [
       {
         "key": "A",
@@ -2187,7 +2191,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 3,
-    "question": "Du ska svänga vänster på bilderna. Har du väjningsplikt i någon av bilderna mot den mötande bilen?",
+    "question": "Du ska svänga vänster på bilderna.\nHar du väjningsplikt i någon av bilderna mot den mötande bilen?",
     "options": [
       {
         "key": "A",
@@ -2214,7 +2218,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 4,
-    "question": "Du ska svänga höger i korsningen på bilden. Har du väjningsplikt mot de gående?",
+    "question": "Du ska svänga höger i korsningen på bilden.\nHar du väjningsplikt mot de gående?",
     "options": [
       {
         "key": "A",
@@ -2237,7 +2241,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 5,
-    "question": "Du ska svänga höger i korsningen på bilden. Har du väjningsplikt mot cyklisten?",
+    "question": "Du ska svänga höger i korsningen på bilden.\nHar du väjningsplikt mot cyklisten?",
     "options": [
       {
         "key": "A",
@@ -2260,7 +2264,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 6,
-    "question": "Det är 9 mars enligt bild A. Du ska parkera bilen enligt bild B. Vägen är inte huvudled och saknar parkeringsanvisningar. Får du parkera?",
+    "question": "Det är 9 mars enligt bild A.\nDu ska parkera bilen enligt bild B. Vägen är inte huvudled och saknar parkeringsanvisningar.\nFår du parkera?",
     "options": [
       {
         "key": "A",
@@ -2287,7 +2291,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 7,
-    "question": "På visst antal år måste taxilegitimationen förnyas. Hur många?",
+    "question": "På visst antal år måste taxilegitimationen förnyas.\nHur många?",
     "options": [
       {
         "key": "A",
@@ -2314,7 +2318,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 8,
-    "question": "Du har fått en körning då är du tvungen att stanna vid en vägkorsning för att hämta passagerare. På hur långt avstånd måste du stanna?",
+    "question": "Du har fått en körning då är du tvungen att stanna vid en vägkorsning för att hämta\npassagerare.\nPå hur långt avstånd måste du stanna?",
     "options": [
       {
         "key": "A",
@@ -2372,7 +2376,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 10,
-    "question": "Får du reducera priset för en kund efter ett avslutat köruppdrag och taxametern än inställd på STOPPAD eller KASSA?",
+    "question": "Får du reducera priset för en kund efter ett avslutat köruppdrag och taxametern än inställd\npå STOPPAD eller KASSA?",
     "options": [
       {
         "key": "A",
@@ -2418,7 +2422,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 12,
-    "question": "Du har fått en körning onsdag kl 12:00 som är en vardag som inte helgdag. Får du stanna för att lämna av en kund?",
+    "question": "Du har fått en körning onsdag kl 12:00 som är en vardag som inte helgdag.\nFår du stanna för att lämna av en kund?",
     "options": [
       {
         "key": "A",
@@ -2441,7 +2445,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 13,
-    "question": "Du kommer fram till en vägfärja med en kund. Där det är lång kö. Har du förtur till färjan?",
+    "question": "Du kommer fram till en vägfärja med en kund.\nDär det är lång kö.\nHar du förtur till färjan?",
     "options": [
       {
         "key": "A",
@@ -2468,7 +2472,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 14,
-    "question": "Du har kommit till korsningen på bilden och du tänker fortsätta rakt fram. Hur ska du uppträda?",
+    "question": "Du har kommit till korsningen på bilden och du tänker fortsätta rakt fram.\nHur ska du uppträda?",
     "options": [
       {
         "key": "A",
@@ -2491,7 +2495,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 15,
-    "question": "Du kör på motorväg och upptäcker att du precis missat avfarten som du skulle svänga av. Hur bör du göra?",
+    "question": "Du kör på motorväg och upptäcker att du precis missat avfarten som du skulle svänga av.\nHur bör du göra?",
     "options": [
       {
         "key": "A",
@@ -2518,7 +2522,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 16,
-    "question": "Du kör med 70 km/tim hastighet i situationen på bilden. Vad ska du göra säkrast?",
+    "question": "Du kör med 70 km/tim hastighet i situationen på bilden.\nVad ska du göra säkrast?",
     "options": [
       {
         "key": "A",
@@ -2545,7 +2549,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 17,
-    "question": "Efter en dygnsvila börjar du köra i taxitrafiken kl. 16.00. Du har gjort uppehåll i arbetet mellan kl. 19.00 och kl. 22.00 då du får en långkörning till Stockholm. Den tar precis 10 timmar utan paus och lika lång tid tillbaka. Du börjar hemresan från Stockholm kl 16:00 Hur långt får du jobba för att ta nästa vila enligt vilotids förordning?",
+    "question": "Efter en dygnsvila börjar du köra i\ntaxitrafiken kl. 16.00.\nDu har gjort uppehåll i arbetet mellan kl. 19.00 och kl. 22.00 då du får en långkörning till\nStockholm. Den tar precis 10 timmar utan paus och lika lång tid tillbaka.\nDu börjar hemresan från Stockholm kl 16:00\nHur långt får du jobba för att ta nästa vila enligt vilotids förordning?",
     "options": [
       {
         "key": "A",
@@ -2576,7 +2580,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 18,
-    "question": "En taxiförare har tidningsbud mellan 04:00- 07:00, kör skolkörning mellan 07:00-10:00, sedan tar han vilotid mellan 10:00 - 12:00. Från 12:00-13:00 jobbar i växel på begäran av åkeriet, sedan skolkörningen igen mellan 13: 00-15:00. Vilken vilotids blad är rätt antecknat?",
+    "question": "En taxiförare har tidningsbud mellan 04:00- 07:00, kör skolkörning mellan 07:00-10:00,\nsedan tar han vilotid mellan 10:00 - 12:00. Från 12:00-13:00 jobbar i växel på begäran av\nåkeriet, sedan skolkörningen igen mellan 13: 00-15:00.\nVilken vilotids blad är rätt antecknat?",
     "options": [
       {
         "key": "A",
@@ -2603,7 +2607,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 19,
-    "question": "Efter 11 timmar ledighet kör du taxi en lördag kl 18.00 – 04.00 med en ny viloperiod kl 20.00–21.00. På söndagen börjar du köra igen kl 12.00. När måste du senast påbörja ytterligare viloperiod under söndagen?",
+    "question": "Efter 11 timmar ledighet kör du taxi en lördag\nkl 18.00 - 04.00 med en ny viloperiod kl 20.00-21.00.\nPå söndagen börjar du köra igen kl 12.00.\nNär måste du senast påbörja ytterligare viloperiod under\nsöndagen?",
     "options": [
       {
         "key": "A",
@@ -2630,7 +2634,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 20,
-    "question": "Du jobbar som taxiförare på ett företag. Din vilotidbok är fulltecknat. Vad bör du göra med den?",
+    "question": "Du jobbar som taxiförare på ett företag. Din vilotidbok är fulltecknat.\nVad bör du göra med den?",
     "options": [
       {
         "key": "A",
@@ -2657,7 +2661,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 21,
-    "question": "Du kör och upptäcker att en plombering på din taxameter är bruten. Vad bör du göra?",
+    "question": "Du kör och upptäcker att en plombering på din taxameter är bruten.\nVad bör du göra?",
     "options": [
       {
         "key": "A",
@@ -2711,7 +2715,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 23,
-    "question": "Om ett taxitrafiktillstånds havare anlitar en taxiförare som saknar taxiförarelegitimation. Vad är det strängaste straffet som tillståndshavaren kan få?",
+    "question": "Om ett taxitrafiktillstånds havare anlitar en taxiförare som saknar taxiförarelegitimation.\nVad är det strängaste straffet som tillståndshavaren kan få?",
     "options": [
       {
         "key": "A",
@@ -2765,7 +2769,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 25,
-    "question": "Du närmar dig en korsning där högerregel gäller. Till vilka fordon ska du lämna företräde eller har du väjningsplikt mot?",
+    "question": "Du närmar dig en korsning där högerregel gäller.\nTill vilka fordon ska du lämna företräde eller har du väjningsplikt mot?",
     "options": [
       {
         "key": "A",
@@ -2792,7 +2796,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 26,
-    "question": "Du är klar med taxiprov. Får du köra taxi?",
+    "question": "Du är klar med taxiprov.\nFår du köra taxi?",
     "options": [
       {
         "key": "A",
@@ -2819,7 +2823,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 27,
-    "question": "Du har tappat bort din taxiförarelegitimation. Och du har ansökt om en ny legitimation. Får du köra i väntan på ett provisorisk eller ny legitimation?",
+    "question": "Du har tappat bort din taxiförarelegitimation. Och du har ansökt om en ny legitimation.\nFår du köra i väntan på ett provisorisk eller ny legitimation?",
     "options": [
       {
         "key": "A",
@@ -2846,7 +2850,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 28,
-    "question": "Du ska stanna och vänta på en viss antal passagerare. Vid vilken skylt är det tillåtet att stanna 10 minuter för att vänta på en kund?",
+    "question": "Du ska stanna och vänta på en viss antal passagerare.\nVid vilken skylt är det tillåtet att stanna 10 minuter för att vänta på en kund?",
     "options": [
       {
         "key": "A",
@@ -2927,7 +2931,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 31,
-    "question": "Du kör en taxi och du har en skolskjuts. Din taxi är utrustad med genomlyst lykta. När ska den tändas på?",
+    "question": "Du kör en taxi och du har en skolskjuts. Din taxi är utrustad med genomlyst lykta.\nNär ska den tändas på?",
     "options": [
       {
         "key": "A",
@@ -2935,7 +2939,7 @@ window.QUESTIONS = [
       },
       {
         "key": "B",
-        "text": "Den tänds 100m före på – eller avstigningen och efter."
+        "text": "Den tänds 100m före på - eller avstigningen och efter."
       },
       {
         "key": "C",
@@ -2947,7 +2951,7 @@ window.QUESTIONS = [
       },
       {
         "key": "E",
-        "text": "Före och efter på – eller avstigningen."
+        "text": "Före och efter på - eller avstigningen."
       }
     ],
     "correct": "A"
@@ -3070,7 +3074,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 36,
-    "question": "Du kör i den här vägen. Vad ska du göra?",
+    "question": "Du kör i den här vägen.\nVad ska du göra?",
     "options": [
       {
         "key": "A",
@@ -3120,7 +3124,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 38,
-    "question": "Du ska svänga vänster i korsningen. Hur bör du uppträda?",
+    "question": "Du ska svänga vänster i korsningen.\nHur bör du uppträda?",
     "options": [
       {
         "key": "A",
@@ -3143,7 +3147,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 39,
-    "question": "Du får en körning med en mamma med tvåårigt barn. De har inte särskildutrustning för barnet. Får barnet lov att åka med?",
+    "question": "Du får en körning med en mamma med tvåårigt barn. De har inte särskildutrustning för\nbarnet.\nFår barnet lov att åka med?",
     "options": [
       {
         "key": "A",
@@ -3166,7 +3170,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-3.pdf",
     "group": "LAGSTIFNING-3",
     "page": 40,
-    "question": "Att köra bil i trafiken ska vara på ett betryggande sätt. En person har druckit alkohol, en uttröttad person som kört hela natten och en person har ätit receptbelagd medicin från läkare. Är det någon av personer ovan får inte köra bil?",
+    "question": "Att köra bil i trafiken ska vara på ett betryggande sätt.\nEn person har druckit alkohol, en uttröttad person som kört hela natten och en person har ätit\nreceptbelagd medicin från läkare.\nÄr det någon av personer ovan får inte köra bil?",
     "options": [
       {
         "key": "A",
@@ -3193,23 +3197,23 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 1,
-    "question": "Du kör den här vägen, hur ska du uppträda?",
+    "question": "Du kö",
     "options": [
       {
         "key": "A",
-        "text": "Jag kör rakt fram utan att stanna."
+        "text": "Jag k"
       },
       {
         "key": "B",
-        "text": "Alla som kör i allmänna vägar har rätt att köra."
+        "text": "Alla"
       },
       {
         "key": "C",
-        "text": "All trafik har väjningsplikt mot mig."
+        "text": "All tr"
       },
       {
         "key": "D",
-        "text": "Jag har väjningsplikt enligt högerregel"
+        "text": "Jag h ör den här v kör rakt fram som kör i a rafik har väj har väjnings vägen, hur s m utan att st allmänna väg jningsplikt splikt enligt ska du upptr tanna. gar har rätt mot mig. t högerregel D räda? att köra. l"
       }
     ],
     "correct": "D"
@@ -3220,7 +3224,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 2,
-    "question": "Du kan få din taxilegitimation återkallad om du begår ett brott. På hur många år blir den minst återkallad?",
+    "question": "Du kan få din taxilegitimation återkallad om du begår ett brott.\nPå hur många år blir den minst återkallad?",
     "options": [
       {
         "key": "A",
@@ -3444,23 +3448,23 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 10,
-    "question": "Du ska till vänster på bilden. Vem har väjningsplikt?",
+    "question": "Du s",
     "options": [
       {
         "key": "A",
-        "text": "Bilen som kommer ifrån höger har väjningsplikt mot mig."
+        "text": "B"
       },
       {
         "key": "B",
-        "text": "Jag har vänjningsplikt mot bilen från höger."
+        "text": "J"
       },
       {
         "key": "C",
-        "text": "Båda vänster och höger trafiken har väjningsplikt mot mig"
+        "text": "B"
       },
       {
         "key": "D",
-        "text": "Jag har väjningsplikt mot båda trafiken från höger och vänster."
+        "text": "J ska till väns Bilen som k Jag har vänj Båda vänste Jag har väjn ster på bilde kommer ifrå njningsplikt er och höge ningsplikt m en. Vem har ån höger ha mot bilen fr er trafiken h mot båda tra r väjningspl ar väjningsp från höger. har väjningsp afiken från h B likt? likt mot mi plikt mot m höger och v g. mig änster."
       }
     ],
     "correct": "B"
@@ -3471,23 +3475,23 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 11,
-    "question": "Vilka personer brukar gå över på övergångstället, enligt tilläggstavlan?",
+    "question": "Vilk",
     "options": [
       {
         "key": "A",
-        "text": "Personer med nedsatt rörelseförmåga."
+        "text": "Perso"
       },
       {
         "key": "B",
-        "text": "Personer med nedsatt hörsel."
+        "text": "Perso"
       },
       {
         "key": "C",
-        "text": "Personer med nedsatt syn."
+        "text": "Perso"
       },
       {
         "key": "D",
-        "text": "Äldre trafikanter."
+        "text": "Äldr ka personer oner med ne oner med ne oner med ne re trafikante brukar gå ö edsatt rörels edsatt hörse edsatt syn. er. över på över seförmåga. el. rgångstället B , enligt tilläggstavlan?"
       }
     ],
     "correct": "B"
@@ -3498,23 +3502,31 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 12,
-    "question": "På vilken av de här bildarna ska du lämna företräda till höger?",
+    "question": "På v",
     "options": [
       {
         "key": "A",
-        "text": "Bild A B."
+        "text": "Bild"
       },
       {
         "key": "B",
-        "text": "Bild B"
+        "text": "Bild"
       },
       {
         "key": "C",
-        "text": "Båda bild A och B"
+        "text": "Båda"
       },
       {
         "key": "D",
-        "text": "Ingen av bilderna"
+        "text": "Ingen vilken av de A B a bild A och n av bildern"
+      },
+      {
+        "key": "A",
+        "text": "e här bildarn h B na na ska du lämna företrä C äda till höge er?"
+      },
+      {
+        "key": "B",
+        "text": ""
       }
     ],
     "correct": "C"
@@ -3575,23 +3587,23 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 15,
-    "question": "Stopplinjen saknas i den här situationen. Var ska du stanna?",
+    "question": "Stop",
     "options": [
       {
         "key": "A",
-        "text": "I jämnhöjd med vägmärket."
+        "text": "I jäm"
       },
       {
         "key": "B",
-        "text": "Vid spårområdet."
+        "text": "Vid s"
       },
       {
         "key": "C",
-        "text": "30 meter före spårområdet."
+        "text": "30 m"
       },
       {
         "key": "D",
-        "text": "30 meter före spårområdet när tåget kommer."
+        "text": "30 m pplinjen sak mnhöjd med spårområde meter före sp meter före sp knas i den h d vägmärket et. pårområdet. pårområdet är situation t. när tåget ko en. Var ska ommer. B du stanna?"
       }
     ],
     "correct": "B"
@@ -3683,7 +3695,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 19,
-    "question": "Dygnets vila under 24-timmarsperiod kan delas upp till olika delar. Vilken är det bästa delning?",
+    "question": "Dygnets vila under 24-timmarsperiod kan delas upp till olika delar.\nVilken är det bästa delning?",
     "options": [
       {
         "key": "A",
@@ -3714,7 +3726,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 20,
-    "question": "Hur många köruppdrag måste en kopia av kvitto eller följesedel uppvisas på begäran av polisen?",
+    "question": "Hur många köruppdrag måste en kopia av kvitto eller följesedel uppvisas på begäran av\npolisen?",
     "options": [
       {
         "key": "A",
@@ -3745,7 +3757,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 21,
-    "question": "Du har vilat en vecka och du ska jobba igen . Hur mycket vilotid måste du fylla i vilotid boken efter ledigheten innan du börjar?",
+    "question": "Du har vilat en vecka och du ska jobba igen .\nHur mycket vilotid måste du fylla i vilotid boken efter ledigheten innan du börjar?",
     "options": [
       {
         "key": "A",
@@ -3826,7 +3838,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 24,
-    "question": "Du kör taxi med en personbil med tillkopplat släpvagn Släpvagnen total vikt är 750 kg. Vilken högsta körkortsbehörighet behöver du för att köra fordonskombinationen?",
+    "question": "Du kör taxi med en personbil med tillkopplat släpvagn\nSläpvagnen total vikt är 750 kg.\nVilken högsta körkortsbehörighet behöver du för att köra fordonskombinationen?",
     "options": [
       {
         "key": "A",
@@ -3907,7 +3919,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 27,
-    "question": "Du har antecknat din tidbok . Enligt lagen så är du skyldig att anteckna de dygn du kör. Hur mycket anteckningar är du skyldig att visa upp vid poliskontroll enligt vilotidsförordningen?",
+    "question": "Du har antecknat din tidbok . Enligt lagen så är du skyldig\n att anteckna de dygn du kör.\nHur mycket anteckningar är du skyldig att visa upp vid poliskontroll enligt\nvilotidsförordningen?",
     "options": [
       {
         "key": "A",
@@ -3938,7 +3950,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 28,
-    "question": "Du kör i taxitrafiken och plötsligt blir taxametern trasig. Vem är skyldig i detta fall att sluta köra i taxitrafiken?",
+    "question": "Du kör i taxitrafiken och plötsligt blir taxametern trasig.\nVem är skyldig i detta fall att sluta köra i taxitrafiken?",
     "options": [
       {
         "key": "A",
@@ -3965,7 +3977,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 29,
-    "question": "Du kan få din taxilegitimation återkallad om du begått ett brott. På hur många år blir den högst återkallad?",
+    "question": "Du kan få din taxilegitimation återkallad om du begått ett brott.\n\nPå hur många år blir den högst återkallad?",
     "options": [
       {
         "key": "A",
@@ -4023,7 +4035,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 31,
-    "question": "Du kommer till en trafikolycka, det är flera personer som blöder, vilken skydd ska du använda?",
+    "question": "Du kommer till en trafikolycka, det är flera personer som blöder, vilken skydd ska du\nanvända?",
     "options": [
       {
         "key": "A",
@@ -4050,7 +4062,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 32,
-    "question": "Du har fått punktering i ett däck och du var tvungen att använda det tillfälliga originella (nödhjul) reservdäcket. Hur mycket får du köra med den?",
+    "question": "Du har fått punktering i ett däck och du var tvungen att använda det tillfälliga originella\n(nödhjul) reservdäcket.\nHur mycket får du köra med den?",
     "options": [
       {
         "key": "A",
@@ -4216,7 +4228,7 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 38,
-    "question": "Du tänker köra om lastbilen på bilden i samband med mötande trafik. Får du överskrida mittlinje?",
+    "question": "Du tänker köra om lastbilen på bilden i samband med mötande trafik. Får du överskrida\nmittlinje?",
     "options": [
       {
         "key": "A",

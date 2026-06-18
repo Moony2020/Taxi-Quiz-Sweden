@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="modal.css" />
 </head>
 <body>
+  <canvas id="confettiCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9999;"></canvas>
   <div class="bg-orb orb-1"></div>
   <div class="bg-orb orb-2"></div>
   <header class="hero">
@@ -99,6 +100,7 @@
           </div>
           <h2 id="questionText" class="question-text latin-text" dir="ltr" lang="sv"></h2>
           <div id="optionsList" class="options-list"></div>
+          <div id="questionImage" class="question-image hidden"></div>
           <div id="questionInfoBox" class="question-info hidden"></div>
           <div id="hintBox" class="hint-box hidden"></div>
           <div id="translationBox" class="translation-box hidden"></div>
@@ -120,7 +122,6 @@
         <div class="result-stats">
           <div><b id="correctCount">0</b><span>صحيح</span></div>
           <div><b id="wrongCount">0</b><span>خطأ</span></div>
-          <div><b id="emptyCount">0</b><span>بدون إجابة</span></div>
         </div>
         <div id="timeStats" class="time-stats hidden">
           <span>الوقت المستغرق: <b id="elapsedTime">--:--</b></span>

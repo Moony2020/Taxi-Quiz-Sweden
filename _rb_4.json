@@ -1,0 +1,367 @@
+{
+ "1": {
+  "question": "Du kör den här vägen, hur ska du uppträda?",
+  "options": {
+   "A": "Jag kör rakt fram utan att stanna.",
+   "B": "Alla som kör i allmänna vägar har rätt att köra.",
+   "C": "All trafik har väjningsplikt mot mig.",
+   "D": "Jag har väjningsplikt enligt högerregel"
+  }
+ },
+ "2": {
+  "question": "Du kan få din taxilegitimation återkallad om du begår ett brott. På hur många år blir den minst återkallad?",
+  "options": {
+   "A": "1 år.",
+   "B": "2 år.",
+   "C": "3 år.",
+   "D": "5 år.",
+   "E": "10 år."
+  }
+ },
+ "3": {
+  "question": "När ska du besiktiga din taxameter?",
+  "options": {
+   "A": "Varje år, senast ett år efter föregående besiktning av taxameter",
+   "B": "Varje två år, senast två år efter föregående besiktning av taxameter",
+   "C": "Varje 6 månader.",
+   "D": "Varje år efter föregående besiktning med fordonsbesiktning."
+  }
+ },
+ "4": {
+  "question": "Vad är rätt om tariff fastpris i din taxi?",
+  "options": {
+   "A": "Du ska räkna fastställt belopp kostnaden vid början av resan",
+   "B": "Du ska räkna fastställt belopp kostnaden och sedan lägger du till grundavgiften efter uppdraget slutar.",
+   "C": "Du ska räkna fastställt belopp kostnaden innan uppdraget slutar.",
+   "D": "Du ska räkna fastställt belopp kostnaden när köruppdraget slutar."
+  }
+ },
+ "5": {
+  "question": "Vilket alternativ anger två uppgifter som alltid ska finnas i ett taxi kvitto?",
+  "options": {
+   "A": "Fordonets yrkestrafiknummer och inkört belopp under körpasset.",
+   "B": "Framkörningsavgiften och beställningscentral namn.",
+   "C": "Förarens kod och datumet för körningen .",
+   "D": "Antal registrerade körningar under körpasset och taxiföretagets telefonnummer."
+  }
+ },
+ "6": {
+  "question": "Var kan du göra kontroll av taxameter?",
+  "options": {
+   "A": "I företagets lokaler.",
+   "B": "Hos polisen.",
+   "C": "I Förarens hus.",
+   "D": "I taxi.",
+   "E": "I verkstad.",
+   "F": "SWEDAC"
+  }
+ },
+ "7": {
+  "question": "Var kan vägkontroll av taxameter ske?",
+  "options": {
+   "A": "Endast på vägen när du kör i taxitrafik.",
+   "B": "Enbart I företagets lokaler.",
+   "C": "I företagets lokaler och på vägen när du kör i taxi trafik.",
+   "D": "Endast på vägen när du kör i taxitrafik, förutsatt att jag inte har någon kund i bilen."
+  }
+ },
+ "8": {
+  "question": "Vem har ansvaret att barnen under 15 år ska använda skyddsutrustningar och bilbälte?",
+  "options": {
+   "A": "Endast föraren.",
+   "B": "Barnet.",
+   "C": "Föraren och tillståndshavare.",
+   "D": "Arbetsgivaren."
+  }
+ },
+ "9": {
+  "question": "Du ska köra en kund en kort sträcka. Måste du använda bilbältet?",
+  "options": {
+   "A": "Ja, alltid.",
+   "B": "Ja, om det endast var en sjukresa.",
+   "C": "Nej, för att det är en kortsträcka."
+  }
+ },
+ "10": {
+  "question": "Du ska till vänster på bilden. Vem har väjningsplikt?",
+  "options": {
+   "A": "Bilen som kommer ifrån höger har väjningsplikt mot mig.",
+   "B": "Jag har vänjningsplikt mot bilen från höger.",
+   "C": "Båda vänster och höger trafiken har väjningsplikt mot mig",
+   "D": "Jag har väjningsplikt mot båda trafiken från höger och vänster."
+  }
+ },
+ "11": {
+  "question": "Vilka personer brukar gå över på övergångstället, enligt tilläggstavlan?",
+  "options": {
+   "A": "Personer med nedsatt rörelseförmåga.",
+   "B": "Personer med nedsatt hörsel.",
+   "C": "Personer med nedsatt syn.",
+   "D": "Äldre trafikanter."
+  }
+ },
+ "12": {
+  "question": "På vilken av de här bildarna ska du lämna företräda till höger?",
+  "options": {
+   "A": "Bild A B.",
+   "B": "Bild B",
+   "C": "Båda bild A och B",
+   "D": "Ingen av bilderna"
+  }
+ },
+ "13": {
+  "question": "Vem kan köra taxi?",
+  "options": {
+   "A": "En person som är 20 år och har haft B. Körkort i två år.",
+   "B": "En person som är 18 år.",
+   "C": "En person som är 21 år och har haft B. Körkort i två år.",
+   "D": "En person som är 25 år och har haft B. Körkort i två år."
+  }
+ },
+ "14": {
+  "question": "Vilka två uppgifter som alltid måste finnas på ett taxikvitto?",
+  "options": {
+   "A": "Köruppdragets påbörjat och avslutat tid .",
+   "B": "Företagets telefonnummer och antal köruppdrag.",
+   "C": "Framkörnings avgift och beställningscentral namn."
+  }
+ },
+ "15": {
+  "question": "Stopplinjen saknas i den här situationen. Var ska du stanna?",
+  "options": {
+   "A": "I jämnhöjd med vägmärket.",
+   "B": "Vid spårområdet.",
+   "C": "30 meter före spårområdet.",
+   "D": "30 meter före spårområdet när tåget kommer."
+  }
+ },
+ "16": {
+  "question": "Vem kan parkera i en parkeringsruta med dessa vägmärken?",
+  "options": {
+   "A": "Alla rörelsehindrade med rullstol",
+   "B": "Alla rullstolsburna har rätt att stanna och parkera",
+   "C": "Alla rörelsehindrade med särskilt tillstånd",
+   "D": "Alla körningar med rörelsehindrade"
+  }
+ },
+ "17": {
+  "question": "Vad betyder polismannens tecken?",
+  "options": {
+   "A": "Mötande ska stanna och jag får köra.",
+   "B": "Mötande ska stanna och jag måste svänga höger.",
+   "C": "Både jag och mötande ska stanna.",
+   "D": "Jag får köra och mötande ska stanna."
+  }
+ },
+ "18": {
+  "question": "Vilket fordon får framföras om föraren har körkortsbehörighet *B***?",
+  "options": {
+   "A": "Fordon som inrett för högst 9 passagerare.",
+   "B": "Fordon som inrett för högst 9-17 passagerare.",
+   "C": "Fordon som inrett för högst 10 passagerare.",
+   "D": "Fordon som inrett för högst 8 passagerare."
+  }
+ },
+ "19": {
+  "question": "Dygnets vila under 24-timmarsperiod kan delas upp till olika delar. Vilken är det bästa delning?",
+  "options": {
+   "A": "1 tim + 1 tim + 9 tim",
+   "B": "1 tim + 4 tim + 6 tim",
+   "C": "6 tim + 7 tim",
+   "D": "3 tim + 8 tim",
+   "E": "2 tim + 3 tim + 8 tim"
+  }
+ },
+ "20": {
+  "question": "Hur många köruppdrag måste en kopia av kvitto eller följesedel uppvisas på begäran av polisen?",
+  "options": {
+   "A": "Det senaste köruppdraget.",
+   "B": "De två senaste köruppdrag.",
+   "C": "De tre senaste köruppdrag.",
+   "D": "De sex senaste köruppdrag.",
+   "E": "De sju senaste köruppdrag."
+  }
+ },
+ "21": {
+  "question": "Du har vilat en vecka och du ska jobba igen . Hur mycket vilotid måste du fylla i vilotid boken efter ledigheten innan du börjar?",
+  "options": {
+   "A": "Den närmaste föregående åtta timmarna.",
+   "B": "Den närmaste föregående dygnsvilan.",
+   "C": "Hela ledigheten.",
+   "D": "Den närmaste föregående tre timmarna."
+  }
+ },
+ "22": {
+  "question": "Vilken tariff är inte tillåtet att användas till en privat person som kund?",
+  "options": {
+   "A": "Summatariff.",
+   "B": "Brytpunktstariff.",
+   "C": "Sträcktariff.",
+   "D": "Tidtariff."
+  }
+ },
+ "23": {
+  "question": "När kan en taxibil användas utan att taxametern är påslagen?",
+  "options": {
+   "A": "När taxiföraren hämtar ett paket från posten på åkeri order.",
+   "B": "När uppdraget utförs enligt fastpris.",
+   "C": "När passagrare begär att skriva ut ett kvitto innan resan.",
+   "D": "Nej, aldrig."
+  }
+ },
+ "24": {
+  "question": "Du kör taxi med en personbil med tillkopplat släpvagn Släpvagnen total vikt är 750 kg. Vilken högsta körkortsbehörighet behöver du för att köra fordonskombinationen?",
+  "options": {
+   "A": "Körkort B",
+   "B": "Körkort BE",
+   "C": "Körkort B och taxilegitimation",
+   "D": "Körkort BE och taxilegitimation"
+  }
+ },
+ "25": {
+  "question": "Vilka fordon kan användas i yrkestrafik?",
+  "options": {
+   "A": "Buss och terrängvagn.",
+   "B": "Personbilar och motorcykel.",
+   "C": "Lastbil och spårvagn.",
+   "D": "Traktor och motorredskap."
+  }
+ },
+ "26": {
+  "question": "Vilka fordon får du köra i yrkesmässig taxitrafik enligt svensk förordning?",
+  "options": {
+   "A": "Yrkesmässig transport med personbil och tillkopplat släp.",
+   "B": "Transport av barn till och från skola av anhörig.",
+   "C": "Skolskjutsning med buss.",
+   "D": "Yrkesmässig trafik med lätt lastbil och personbil."
+  }
+ },
+ "27": {
+  "question": "Du har antecknat din tidbok . Enligt lagen så är du skyldig att anteckna de dygn du kör. Hur mycket anteckningar är du skyldig att visa upp vid poliskontroll enligt vilotidsförordningen?",
+  "options": {
+   "A": "Det senaste dygnet",
+   "B": "De senaste två dygnen",
+   "C": "De senaste fem dygnen",
+   "D": "De senaste sju dygnen",
+   "E": "De senaste tio dygnen"
+  }
+ },
+ "28": {
+  "question": "Du kör i taxitrafiken och plötsligt blir taxametern trasig. Vem är skyldig i detta fall att sluta köra i taxitrafiken?",
+  "options": {
+   "A": "Endast föraren.",
+   "B": "Endast bolaget.",
+   "C": "Båda föraren och bolaget.",
+   "D": "Taxi ägaren."
+  }
+ },
+ "29": {
+  "question": "Du kan få din taxilegitimation återkallad om du begått ett brott. På hur många år blir den högst återkallad?",
+  "options": {
+   "A": "1 år.",
+   "B": "2 år.",
+   "C": "3år.",
+   "D": "5 år.",
+   "E": "10 år."
+  }
+ },
+ "30": {
+  "question": "Hur lång tid ska högst vara mellan två besiktningar av taxameter?",
+  "options": {
+   "A": "6 månader.",
+   "B": "12 månader.",
+   "C": "18 månader.",
+   "D": "24 månader."
+  }
+ },
+ "31": {
+  "question": "Du kommer till en trafikolycka, det är flera personer som blöder, vilken skydd ska du använda?",
+  "options": {
+   "A": "Munskydd.",
+   "B": "Handskar.",
+   "C": "Skoskydd.",
+   "D": "Solglasögon."
+  }
+ },
+ "32": {
+  "question": "Du har fått punktering i ett däck och du var tvungen att använda det tillfälliga originella (nödhjul) reservdäcket. Hur mycket får du köra med den?",
+  "options": {
+   "A": "Däcket får aldrig monteras på bilen om övriga däck är dubbade.",
+   "B": "Däcken åldras snabbare än vanliga däck.",
+   "C": "Däcken får aldrig köra fortare än vad som anges på däcket.",
+   "D": "Däcket får endast användas på torr körbana.",
+   "E": "Däcket får aldrig köras fortare än 30 km/h."
+  }
+ },
+ "33": {
+  "question": "Får du lämna av passagerare på vägen där detta märke finns uppsatt?",
+  "options": {
+   "A": "Ja, du får köra på gatan men endast i gånghastighet.",
+   "B": "Ja, du kan köra in på vägen men maxhastighet 30 km/h.",
+   "C": "Nej, du får inte köra in.",
+   "D": "Ja, du får enbart köra in och lämna passagerare som bor på gatan."
+  }
+ },
+ "34": {
+  "question": "Kan taxametern vara avstängd under något köruppdrag?",
+  "options": {
+   "A": "Ja, om det var en skolskjuts körning",
+   "B": "Ja, om det var en fastpris körning",
+   "C": "Nej, den ska alltid vara i funktion",
+   "D": "Ja, om det var en färdtjänst körning",
+   "E": "Ja, om det var en körning i linjetrafik"
+  }
+ },
+ "35": {
+  "question": "Vem ska dömas om ett taxiföretag saknar taxitillstånd?",
+  "options": {
+   "A": "Taxiförare och trafik utövare.",
+   "B": "Endast förare.",
+   "C": "Taxiägare och trafik utövare."
+  }
+ },
+ "36": {
+  "question": "Du har påbörjat ett körpass och du upptäcker att du har glömt din vilotid bok. Vad gäller?",
+  "options": {
+   "A": "Du kan använda en ny tidbok och du ska kasta den som du glömde så snart du avslutar passet.",
+   "B": "Du kan använda arbetsgivarens tid tidbok tillfälligt.",
+   "C": "Du ska hämta tidboken innan du börjar passet eftersom den måste avsluta innan du använder en ny tidbok.",
+   "D": "Du kan använda en ny tidbok bara under passet, och jag ska byta den mot den jag glömde efter passet."
+  }
+ },
+ "37": {
+  "question": "Vilka fordon får du köra som taxi?",
+  "options": {
+   "A": "Personbil med tungtsläp fordon.",
+   "B": "Lastbil med totalvikt 3,7 ton .",
+   "C": "Personbil med totalvikt 3,2 ton.",
+   "D": "Buss med 12 passagerare."
+  }
+ },
+ "38": {
+  "question": "Du tänker köra om lastbilen på bilden i samband med mötande trafik. Får du överskrida mittlinje?",
+  "options": {
+   "A": "Ja, eftersom mötande trafiken kan köra på vägrenen.",
+   "B": "Ja, eftersom lastbilen kör på vägrenen om vänster hjulpar ska inte överskrida mittlinje.",
+   "C": "Nej.",
+   "D": "Nej, om mötande trafik inte ser min avsikt."
+  }
+ },
+ "39": {
+  "question": "Vilken vikt förändras om du tar upp en passagerare i din taxibil?",
+  "options": {
+   "A": "Tjänstvikt.",
+   "B": "Totalvikt.",
+   "C": "Bruttovikt.",
+   "D": "Maxlastsvikt."
+  }
+ },
+ "40": {
+  "question": "Får du stanna vid en parkerad bil som bilen på bilden?",
+  "options": {
+   "A": "Ja, om det är 3m mellan bilen och vägens mitt.",
+   "B": "Nej.",
+   "C": "Ja, om jag inte stör eller hindrar andra trafiken."
+  }
+ }
+}

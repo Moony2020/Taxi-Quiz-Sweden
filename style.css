@@ -700,6 +700,24 @@ body:not(.light) .group-card:hover {
 
 .latin-text { font-family: 'Inter', sans-serif; }
 
+/* ─── Question Image (from PDF) ─── */
+.question-image {
+  margin: 16px 0 18px;
+  padding: 12px;
+  border-radius: var(--rs);
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.04);
+  text-align: center;
+}
+
+.question-image img {
+  max-width: 100%;
+  max-height: 480px;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+}
+
 /* ─── Options ─── */
 .options-list { display: grid; gap: 9px; }
 
@@ -747,10 +765,10 @@ body:not(.light) .group-card:hover {
 }
 
 .option.selected { border-color: var(--gold); background: var(--gold-dim); }
-.option.correct { border: 2px solid var(--good); background: rgba(53,212,143,.12); }
-.option.correct .key { background: rgba(53,212,143,.25); color: var(--good); }
-.option.wrong { border: 2px solid var(--bad); background: rgba(245,100,118,.12); }
-.option.wrong .key { background: rgba(245,100,118,.25); color: var(--bad); }
+.options-list .option.correct { border: 2px solid var(--good) !important; background: rgba(53,212,143,.22) !important; box-shadow: 0 0 0 3px rgba(53,212,143,.2) !important; }
+.options-list .option.correct .key { background: rgba(53,212,143,.4) !important; color: var(--good) !important; }
+.options-list .option.wrong { border: 2px solid var(--bad) !important; background: rgba(245,100,118,.22) !important; box-shadow: 0 0 0 3px rgba(245,100,118,.2) !important; }
+.options-list .option.wrong .key { background: rgba(245,100,118,.4) !important; color: var(--bad) !important; }
 
 /* ─── Hint Box ─── */
 .hint-box {
@@ -825,7 +843,7 @@ body.light .score-circle::before {
 
 .result-stats {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 12px;
   max-width: 480px;
   margin: 20px auto;
