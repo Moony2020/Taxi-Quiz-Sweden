@@ -44,6 +44,7 @@ body {
     linear-gradient(180deg, #0d1020 0%, #090c19 48%, #080b17 100%);
   color: var(--text);
   min-height: 100vh;
+  min-width: 320px;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-attachment: fixed;
@@ -396,14 +397,14 @@ button:disabled { opacity: .38; cursor: not-allowed; }
 .group-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
-  gap: 14px;
+  gap: 10px;
 }
 
 .group-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--r);
-  padding: 20px;
+  padding: 14px;
   box-shadow: var(--sh-sm);
   position: relative;
   overflow: hidden;
@@ -443,11 +444,11 @@ body:not(.light) .group-card:hover {
 .group-actions {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 7px;
+  gap: 5px;
   margin-top: 4px;
 }
 
-.group-actions button { padding: 8px 10px; font-size: .84rem; border-radius: 10px; }
+.group-actions button { padding: 8px 6px; font-size: .82rem; border-radius: 10px; }
 
 .reset-btn {
   font-size: 1.1rem;
@@ -843,7 +844,7 @@ body.light .score-circle::before {
 
 .result-stats {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 12px;
   max-width: 480px;
   margin: 20px auto;
@@ -1144,7 +1145,6 @@ body.light .modal-card {
   .question-actions #nextBtn { order: 4; }
   .result-actions { display: grid; grid-template-columns: 1fr; }
   .modal-actions { display: grid; grid-template-columns: 1fr; }
-  .group-actions { grid-template-columns: 1fr 1fr; }
   .modal-card { padding: 22px; }
   .topbar { padding: 14px 20px; }
 }

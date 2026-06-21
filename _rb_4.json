@@ -101,9 +101,9 @@
   }
  },
  "12": {
-  "question": "På vilken av de här bildarna ska du lämna företräda till höger?",
+  "question": "På vilken av de här bilderna ska du lämna företräde till höger?",
   "options": {
-   "A": "Bild A B.",
+   "A": "Bild A",
    "B": "Bild B",
    "C": "Båda bild A och B",
    "D": "Ingen av bilderna"

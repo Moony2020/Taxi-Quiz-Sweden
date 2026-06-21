@@ -443,7 +443,7 @@ function finish(){
   $('resultTitle').textContent = state.title;
   $('scorePercent').textContent = pct+'%';
   document.querySelector('.score-circle').style.background = `conic-gradient(var(--gold) ${pct*3.6}deg, rgba(255,255,255,.12) 0deg)`;
-  $('correctCount').textContent=correct; $('wrongCount').textContent=wrong;
+  $('correctCount').textContent=correct; $('wrongCount').textContent=wrong; $('emptyCount').textContent=empty;
   const timeStatsEl = $('timeStats');
   if(timeStatsEl){
     const mins = Math.floor(state.elapsedSeconds/60);

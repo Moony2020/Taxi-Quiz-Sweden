@@ -3498,11 +3498,11 @@ window.QUESTIONS = [
     "source": "LAGSTIFNING-4.pdf",
     "group": "LAGSTIFNING-4",
     "page": 12,
-    "question": "På vilken av de här bildarna ska du lämna företräda till höger?",
+    "question": "På vilken av de här bilderna ska du lämna företräde till höger?",
     "options": [
       {
         "key": "A",
-        "text": "Bild A B."
+        "text": "Bild A"
       },
       {
         "key": "B",
